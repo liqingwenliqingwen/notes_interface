@@ -1,0 +1,3 @@
+addNotePath : '/v3/notesvr/set/noteinfo'
+addNoteContent : '/v3/notesvr/set/notecontent'
+#getNotePath : '/v3/notesvr/user/{}/home/startindex/{}/rows/{}/notes'.format(236948373, 0, 10)

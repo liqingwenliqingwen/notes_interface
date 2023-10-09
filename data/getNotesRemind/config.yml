@@ -1,0 +1,3 @@
+setNoteInfoPath: '/v3/notesvr/set/noteinfo'
+addNoteContentPath: '/v3/notesvr/set/notecontent'
+getNotesRemind: '/v3/notesvr/web/getnotes/remind'

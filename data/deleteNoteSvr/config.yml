@@ -1,0 +1,7 @@
+setNoteInfoPath: '/v3/notesvr/set/noteinfo'
+addNoteContentPath: '/v3/notesvr/set/notecontent'
+#addNoteGroupPath: '/v3/notesvr/set/notegroup'
+#get_note_group_path: '/v3/notesvr/web/getnotes/group'
+#NotesRemind: '/v3/notesvr/web/getnotes/remind'
+getNoteBody: '/v3/notesvr/get/notebody'
+deleteNoteSvr: '/v3/notesvr/delete'
