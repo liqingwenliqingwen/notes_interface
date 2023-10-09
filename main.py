@@ -20,7 +20,7 @@ ENVIRON = 'Online'
 
 def run(test_suite):
     # 定义输出的文件位置和名字
-    filename = f"{datetime.now().strftime('%Y%m%d')}_report.html"
+    filename = "report.html"
     result = BeautifulReport(test_suite)
     result.report(filename='report\\' + filename, description='测试报告', report_dir='./')
 
