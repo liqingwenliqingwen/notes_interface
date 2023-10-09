@@ -3,12 +3,12 @@ import unittest
 
 from parameterized import parameterized
 
-from wps_note_project.business.apiRequest import ApiRequests
-from wps_note_project.business.generateNote import GenerateNote
-from wps_note_project.business.wipeNote import WipeNote
-from wps_note_project.common.caseLog import step, class_case_log
-from wps_note_project.common.checkResult import CheckResult
-from wps_note_project.common.yamlOperator import YamlOperator
+from business.apiRequest import ApiRequests
+from business.generateNote import GenerateNote
+from business.wipeNote import WipeNote
+from common.caseLog import step, class_case_log
+from common.checkResult import CheckResult
+from common.yamlOperator import YamlOperator
 
 @class_case_log
 class TestCaseSetNoteGroupInput(unittest.TestCase):
