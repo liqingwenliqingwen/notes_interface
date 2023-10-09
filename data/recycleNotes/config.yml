@@ -1,0 +1,5 @@
+setNoteInfoPath: '/v3/notesvr/set/noteinfo'
+addNoteContentPath: '/v3/notesvr/set/notecontent'
+getNoteBody: '/v3/notesvr/get/notebody'
+deleteNoteSvr: '/v3/notesvr/delete'
+pathCleanRecycle : '/v3/notesvr/cleanrecyclebin'

@@ -1,0 +1,5 @@
+addNoteGroupPath: '/v3/notesvr/set/notegroup'
+getNoteGroupPath: '/v3/notesvr/get/notegroup'
+delNoteGroup: '/v3/notesvr/delete/notegroup'
+
+
