@@ -126,7 +126,9 @@ class TestCaseGetNotesRemindInput(unittest.TestCase):
         expected = {'errorCode': -7, 'errorMsg': 'remindTime Requested!'}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    must_key_remindStartTime = [0]
+    must_key_remindStartTime = [
+        (0,)
+    ]
 
     @parameterized.expand(must_key_remindStartTime)
     def testCase_03(self, param):
@@ -171,7 +173,9 @@ class TestCaseGetNotesRemindInput(unittest.TestCase):
         expected = {'errorCode': -7, 'errorMsg': 'remindTime Requested!'}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    must_key_remindStartTime = [-1704072587]
+    must_key_remindStartTime = [
+        (-1704072587,)
+    ]
 
     @parameterized.expand(must_key_remindStartTime)
     def testCase_04(self, param):
@@ -534,7 +538,9 @@ class TestCaseGetNotesRemindInput(unittest.TestCase):
         expected = {'responseTime': 0, 'webNotes': list}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    startIndex = [-2147483648]
+    startIndex = [
+        (-2147483648,)
+    ]
 
     @parameterized.expand(startIndex)
     def testCase_12(self, param):
@@ -579,7 +585,9 @@ class TestCaseGetNotesRemindInput(unittest.TestCase):
         expected = {'responseTime': 0, 'webNotes': list}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    startIndex = [2147483648]
+    startIndex = [
+        (2147483648,)
+    ]
 
     @parameterized.expand(startIndex)
     def testCase_13(self, param):
@@ -805,7 +813,9 @@ class TestCaseGetNotesRemindInput(unittest.TestCase):
         expected = {'responseTime': 0, 'webNotes': list}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    row = [-2147483648]
+    row = [
+        (-2147483648,)
+    ]
 
     @parameterized.expand(row)
     def testCase_18(self, param):
@@ -850,7 +860,9 @@ class TestCaseGetNotesRemindInput(unittest.TestCase):
         expected = {'responseTime': 0, 'webNotes': list}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    row = [2147483648]
+    row = [
+        (2147483648,)
+    ]
 
     @parameterized.expand(row)
     def testCase_19(self, param):

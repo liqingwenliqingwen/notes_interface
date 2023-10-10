@@ -403,7 +403,9 @@ class TestCaseGetNoteInGroupInput(unittest.TestCase):
         expected = {'responseTime': 0, 'webNotes': []}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    optional_startIndex_max = [2147483648]
+    optional_startIndex_max = [
+        (2147483648,)
+    ]
 
     @parameterized.expand(optional_startIndex_max)
     def testCase_09(self, param):
@@ -498,7 +500,9 @@ class TestCaseGetNoteInGroupInput(unittest.TestCase):
         expected = {'responseTime': int, 'webNotes': list}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    optional_rows_intMax = [2147483648]
+    optional_rows_intMax = [
+        (2147483648,)
+    ]
 
     @parameterized.expand(optional_rows_intMax)
     def testCase_11(self, param):
