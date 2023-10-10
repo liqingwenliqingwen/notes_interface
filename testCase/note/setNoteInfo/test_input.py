@@ -18,7 +18,7 @@ class TestCaseSetNoteInfoInput(unittest.TestCase):
     outPutResult = CheckResult()
     envConfig = YamlOperator().env_config()
     generateNote = GenerateNote()
-    setNoteInfoConfig = YamlOperator.api_data_config('SetNoteInfo')
+    setNoteInfoConfig = YamlOperator.api_data_config('setNoteInfo')
     userId = envConfig['user_id']
     sid = envConfig['sid']
     sidB = envConfig['sidB']
