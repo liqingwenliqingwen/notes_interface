@@ -111,7 +111,9 @@ class TestCaseGetNotePageInput(unittest.TestCase):
                     'path': '/v3/notesvr/user/236948373/home/startindex//rows/10/notes'}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    must_key_userId = ['236948373"or"1=1']
+    must_key_userId = [
+        ('236948373"or"1=1',)
+    ]
 
     @parameterized.expand(must_key_userId)
     def testCase_06(self, param):
@@ -206,7 +208,9 @@ class TestCaseGetNotePageInput(unittest.TestCase):
         res = self.apiRequests.note_get(self.host + getNotePath, param, self.sid)
         self.assertEqual(200, res.status_code)
 
-    startIndex_str = [1.5]
+    startIndex_str = [
+        (1.5,)
+    ]
 
     @parameterized.expand(startIndex_str)
     def testCase_12(self, param):
@@ -320,7 +324,9 @@ class TestCaseGetNotePageInput(unittest.TestCase):
         expected = {'errorCode': -2010, 'errorMsg': ''}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    wps_sid_param = ['V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b85']
+    wps_sid_param = [
+        ('V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b85',)
+    ]
 
     @parameterized.expand(wps_sid_param)
     def testCase_19(self, param):

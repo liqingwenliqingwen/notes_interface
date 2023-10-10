@@ -344,7 +344,9 @@ class TestCaseSetNoteInfoInput(unittest.TestCase):
         expected = {'responseTime': int, 'infoVersion': int, 'infoUpdateTime': int}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    optional_groupId_chinese = ["999你好"]
+    optional_groupId_chinese = [
+        ("999你好",)
+    ]
 
     @parameterized.expand(optional_groupId_chinese)
     def testCase_18(self, param):

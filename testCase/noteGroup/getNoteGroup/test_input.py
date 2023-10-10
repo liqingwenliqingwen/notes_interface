@@ -57,7 +57,10 @@ class TestCaseGetNoteGroupInput(unittest.TestCase):
         res = self.apiRequests.note_post(self.host + self.getNoteGroupPath, self.userId, self.sid, body)
         self.assertEqual(200, res.status_code)
 
-    optional_excludeInvalid_enum = [True, False]
+    optional_excludeInvalid_enum = [
+        (True,),
+        (False,)
+    ]
 
     @parameterized.expand(optional_excludeInvalid_enum)
     def testCase_02(self, param):
