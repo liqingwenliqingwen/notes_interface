@@ -153,7 +153,7 @@ class TestCaseSetNoteGroupInput(unittest.TestCase):
         res = self.apiRequests.note_post(self.host + self.setNoteGroupPath, self.userId, self.sid, body)
         self.assertEqual(200, res.status_code)
 
-    order = [0, 1.5]
+    order = [(0,),( 1.5,)]
 
     @parameterized.expand(order)
     def testCase_08(self, param):
@@ -183,7 +183,7 @@ class TestCaseSetNoteGroupInput(unittest.TestCase):
         res = self.apiRequests.note_post(self.host + self.setNoteGroupPath, self.userId, self.sid, body)
         self.assertEqual(200, res.status_code)
 
-    order = [2147483648, -2147483649]
+    order = [(2147483648,),( -2147483649,)]
 
     @parameterized.expand(order)
     def testCase_10(self, param):

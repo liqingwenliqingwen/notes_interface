@@ -178,7 +178,7 @@ class TestCaseGetNotePageInput(unittest.TestCase):
         expected = {'errorCode': -7, 'errorMsg': '参数类型错误！'}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    startIndex_int_MAX_MIN = [2147483648, -2147483649]
+    startIndex_int_MAX_MIN = [(2147483648,), (-2147483649,)]
 
     @parameterized.expand(startIndex_int_MAX_MIN)
     def testCase_10(self, param):
@@ -276,7 +276,7 @@ class TestCaseGetNotePageInput(unittest.TestCase):
 
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    must_key_rows = [-10, "10", '10']
+    must_key_rows = [(-10,), ("10",), ('10',)]
 
     @parameterized.expand(must_key_rows)
     def testCase_16(self, param):
@@ -291,7 +291,7 @@ class TestCaseGetNotePageInput(unittest.TestCase):
         self.assertEqual(200, res.status_code)
         expected = {}
 
-    must_key_rows = [-2147483649, 2147483649]
+    must_key_rows = [(-2147483649,), (2147483649,)]
 
     @parameterized.expand(must_key_rows)
     def testCase_17(self, param):

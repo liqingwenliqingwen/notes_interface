@@ -144,7 +144,7 @@ class TestCaseSetNoteInfoInput(unittest.TestCase):
         expected = {'responseTime': int, 'infoVersion': int, 'infoUpdateTime': int}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    optional_star_negative = [-1, 1.5]
+    optional_star_negative = [(-1,),( 1.5,)]
 
     @parameterized.expand(optional_star_negative)
     def testCase_07(self, param):
@@ -180,7 +180,7 @@ class TestCaseSetNoteInfoInput(unittest.TestCase):
         expected = {'responseTime': int, 'infoVersion': int, 'infoUpdateTime': int}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    optional_star_ = [1, 0]
+    optional_star_ = [(1,),( 0,)]
 
     @parameterized.expand(optional_star_)
     def testCase_09(self, param):
@@ -219,7 +219,7 @@ class TestCaseSetNoteInfoInput(unittest.TestCase):
         expected = {'responseTime': int, 'infoVersion': int, 'infoUpdateTime': int}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    optional_remindTime_min_max = [5387, 4070914187]
+    optional_remindTime_min_max = [(5387,),( 4070914187,)]
 
     @parameterized.expand(optional_remindTime_min_max)
     def testCase_11(self, param):
@@ -236,7 +236,7 @@ class TestCaseSetNoteInfoInput(unittest.TestCase):
         expected = {'responseTime': int, 'infoVersion': int, 'infoUpdateTime': int}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    optional_remindTime_negative = [-5387, 4070914187.90]
+    optional_remindTime_negative = [(-5387,),( 4070914187.90,)]
 
     @parameterized.expand(optional_remindTime_negative)
     def testCase_12(self, param):
@@ -273,7 +273,7 @@ class TestCaseSetNoteInfoInput(unittest.TestCase):
         expected = {'responseTime': int, 'infoVersion': int, 'infoUpdateTime': int}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    optional_remindType_decimal = [1.5, '1']
+    optional_remindType_decimal = [(1.5,),( '1',)]
 
     @parameterized.expand(optional_remindType_decimal)
     def testCase_14(self, param):
@@ -290,7 +290,7 @@ class TestCaseSetNoteInfoInput(unittest.TestCase):
         expected = {'responseTime': int, 'infoVersion': int, 'infoUpdateTime': int}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    optional_remindType_negative = [-1]
+    optional_remindType_negative = [(-1,)]
 
     @parameterized.expand(optional_remindType_negative)
     def testCase_15(self, param):

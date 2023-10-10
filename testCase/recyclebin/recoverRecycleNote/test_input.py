@@ -130,7 +130,7 @@ class TestCaseRecoverRecycleNoteInput(unittest.TestCase):
         res = self.apiRequests.note_patch(self.host + recoverRecyclePath, self.userId, self.sid, body)
         self.assertEqual(412, res.status_code)
 
-    must_key_userId = [-236948373, 0]
+    must_key_userId = [(-236948373,), (0,)]
 
     @parameterized.expand(must_key_userId)
     def testCase_04(self, param):
@@ -159,7 +159,7 @@ class TestCaseRecoverRecycleNoteInput(unittest.TestCase):
         res = self.apiRequests.note_patch(self.host + recoverRecyclePath, self.userId, self.sid, body)
         self.assertEqual(412, res.status_code)
 
-    must_key_userId = [236948373.5]
+    must_key_userId = [(236948373.5,)]
 
     @parameterized.expand(must_key_userId)
     def testCase_05(self, param):
@@ -188,7 +188,7 @@ class TestCaseRecoverRecycleNoteInput(unittest.TestCase):
         res = self.apiRequests.note_patch(self.host + recoverRecyclePath, self.userId, self.sid, body)
         self.assertEqual(500, res.status_code)
 
-    must_key_userId = [236948373]
+    must_key_userId = [(236948373,)]
 
     @parameterized.expand(must_key_userId)
     def testCase_06(self, param):
@@ -217,7 +217,7 @@ class TestCaseRecoverRecycleNoteInput(unittest.TestCase):
         res = self.apiRequests.note_patch(self.host + recoverRecyclePath, self.userId, self.sid, body)
         self.assertEqual(200, res.status_code)
 
-    must_key_userId = [-1, 0]
+    must_key_userId = [(-1,), (0,)]
 
     @parameterized.expand(must_key_userId)
     def testCase_07(self, param):

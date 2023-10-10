@@ -87,7 +87,7 @@ class TestCaseGetRecycleNoteTestInput(unittest.TestCase):
                     'message': 'No message available', 'path': str}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    must_key_userid = [-1]
+    must_key_userid = [(-1,)]
 
     @parameterized.expand(must_key_userid)
     def testCase_03(self, param):
@@ -255,7 +255,7 @@ class TestCaseGetRecycleNoteTestInput(unittest.TestCase):
         expected = {'errorCode': -7, 'errorMsg': '参数类型错误！'}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    must_key_startIndex = [-2147483648]
+    must_key_startIndex = [(-2147483648,)]
 
     @parameterized.expand(must_key_startIndex)
     def testCase_10(self, param):
@@ -278,7 +278,7 @@ class TestCaseGetRecycleNoteTestInput(unittest.TestCase):
         expected = {'responseTime': 0, 'webNotes': []}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    must_key_startIndex = [2147483648]
+    must_key_startIndex = [(2147483648,)]
 
     @parameterized.expand(must_key_startIndex)
     def testCase_11(self, param):
@@ -377,7 +377,7 @@ class TestCaseGetRecycleNoteTestInput(unittest.TestCase):
                     'path': str}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    must_key_rows = [1.5]
+    must_key_rows = [(1.5,)]
 
     @parameterized.expand(must_key_rows)
     def testCase_15(self, param):
@@ -400,7 +400,7 @@ class TestCaseGetRecycleNoteTestInput(unittest.TestCase):
         expected = {'errorCode': -7, 'errorMsg': '参数类型错误！'}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    must_key_rows = [-2147483648]
+    must_key_rows = [(-2147483648,)]
 
     @parameterized.expand(must_key_rows)
     def testCase_16(self, param):
@@ -423,7 +423,7 @@ class TestCaseGetRecycleNoteTestInput(unittest.TestCase):
         expected = {'responseTime': 0, 'webNotes': []}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    must_key_rows = [2147483648]
+    must_key_rows = [(2147483648,)]
 
     @parameterized.expand(must_key_rows)
     def testCase_17(self, param):
