@@ -10,6 +10,7 @@ from common.caseLog import step, class_case_log
 from common.checkResult import CheckResult
 from common.yamlOperator import YamlOperator
 
+
 @class_case_log
 class TestCaseSetNoteGroupInput(unittest.TestCase):
     apiRequests = ApiRequests()
