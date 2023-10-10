@@ -34,7 +34,10 @@ class TestCaseGetRecycleNoteTestInput(unittest.TestCase):
         """清除数据"""
         self.wipeNote.wipeNote(self.userId, self.sid)
 
-    must_key_userid = [None, '9999999999999999999999999999999']
+    must_key_userid = [
+        (None,),
+        ('9999999999999999999999999999999999999999999999999999',)
+    ]
 
     @parameterized.expand(must_key_userid)
     def testCase_01(self, param):
@@ -57,7 +60,10 @@ class TestCaseGetRecycleNoteTestInput(unittest.TestCase):
         expected = {'errorCode': -7, 'errorMsg': '参数类型错误！'}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    must_key_userid = ['', '！@#4909090']
+    must_key_userid = [
+        ('!@#$e4544',),
+        ('',)
+    ]
 
     @parameterized.expand(must_key_userid)
     def testCase_02(self, param):
@@ -173,7 +179,10 @@ class TestCaseGetRecycleNoteTestInput(unittest.TestCase):
         expected = {'errorCode': -7, 'errorMsg': '参数类型错误！'}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    must_key_startIndex = [None]
+    must_key_startIndex = [
+        (None,)
+
+    ]
 
     @parameterized.expand(must_key_startIndex)
     def testCase_07(self, param):
@@ -196,7 +205,10 @@ class TestCaseGetRecycleNoteTestInput(unittest.TestCase):
         expected = {'errorCode': -7, 'errorMsg': '参数类型错误！'}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    must_key_startIndex = ['']
+    must_key_startIndex = [
+
+        ('',)
+    ]
 
     @parameterized.expand(must_key_startIndex)
     def testCase_08t(self, param):
@@ -312,7 +324,10 @@ class TestCaseGetRecycleNoteTestInput(unittest.TestCase):
         expected = {'responseTime': int, 'webNotes': list}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    must_key_rows = [None]
+    must_key_rows = [
+        (None,)
+
+    ]
 
     @parameterized.expand(must_key_rows)
     def testCase_13(self, param):
@@ -335,7 +350,10 @@ class TestCaseGetRecycleNoteTestInput(unittest.TestCase):
         expected = {'errorCode': -7, 'errorMsg': '参数类型错误！'}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    must_key_rows = ['']
+    must_key_rows = [
+
+        ('',)
+    ]
 
     @parameterized.expand(must_key_rows)
     def testCase_14(self, param):

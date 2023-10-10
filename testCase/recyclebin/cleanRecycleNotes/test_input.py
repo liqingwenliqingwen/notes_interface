@@ -35,7 +35,10 @@ class TestCaseCleanRecycleNoteTestInput(unittest.TestCase):
         """清除数据"""
         self.wipeNote.wipeNote(self.userId, self.sid)
 
-    must_key = [None]
+    must_key = [
+        (None,)
+
+    ]
 
     @parameterized.expand(must_key)
     def testCase_01(self, param):
@@ -64,7 +67,10 @@ class TestCaseCleanRecycleNoteTestInput(unittest.TestCase):
         self.assertEqual(500, res.status_code)
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    must_key = ['']
+    must_key = [
+
+        ('',)
+    ]
 
     @parameterized.expand(must_key)
     def testCase_02(self, param):

@@ -34,7 +34,10 @@ class TestCaseGetNotesRemindInput(unittest.TestCase):
         """清空数据"""
         self.wipeNote.wipeNote(self.userId, self.sid)
 
-    remindStartTime = [None, '']
+    remindStartTime = [
+        (None,),
+        ('',)
+    ]
 
     @parameterized.expand(remindStartTime)
     def testCase_01(self, param):
@@ -258,7 +261,10 @@ class TestCaseGetNotesRemindInput(unittest.TestCase):
         expected = {'responseTime': 0, 'webNotes': list}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    remindEndTime = [None, '']
+    remindEndTime = [
+        (None,),
+        ('',)
+    ]
 
     @parameterized.expand(remindEndTime)
     def testCase_06(self, param):
@@ -392,7 +398,10 @@ class TestCaseGetNotesRemindInput(unittest.TestCase):
         expected = {'errorCode': -7, 'errorMsg': 'remindTime Requested!'}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    must_key_startIndex = [None, '']
+    must_key_startIndex = [
+        (None,),
+        ('',)
+    ]
 
     @parameterized.expand(must_key_startIndex)
     def testCase_09(self, param):
@@ -660,7 +669,10 @@ class TestCaseGetNotesRemindInput(unittest.TestCase):
         expected = {'responseTime': 0, 'webNotes': list}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    must_key_rows = [None, '']
+    must_key_rows = [
+        (None,),
+        ('',)
+    ]
 
     @parameterized.expand(must_key_rows)
     def testCase_15(self, param):

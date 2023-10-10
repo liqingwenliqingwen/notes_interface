@@ -40,7 +40,10 @@ class TestCaseSetNoteInfoInput(unittest.TestCase):
         step('STEP1:清空数据')
         self.wipeNote.wipeNote(self.userId, self.sid)
 
-    must_key_noteIds_null = ['', None]
+    must_key_noteIds_null = [
+        (None,),
+        ('',)
+    ]
 
     @parameterized.expand(must_key_noteIds_null)
     def testCase_01(self, param):
@@ -120,7 +123,10 @@ class TestCaseSetNoteInfoInput(unittest.TestCase):
         expected = {'responseTime': int, 'infoVersion': int, 'infoUpdateTime': int}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    optional_star_None = ['', None]
+    optional_star_None = [
+        (None,),
+        ('',)
+    ]
 
     @parameterized.expand(optional_star_None)
     def testCase_06(self, param):
@@ -192,7 +198,10 @@ class TestCaseSetNoteInfoInput(unittest.TestCase):
         expected = {'responseTime': int, 'infoVersion': int, 'infoUpdateTime': int}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    optional_remindTime = [None, '']
+    optional_remindTime = [
+        (None,),
+        ('',)
+    ]
 
     @parameterized.expand(optional_remindTime)
     def testCase_10(self, param):
@@ -244,7 +253,10 @@ class TestCaseSetNoteInfoInput(unittest.TestCase):
         expected = {'responseTime': int, 'infoVersion': int, 'infoUpdateTime': int}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    optional_remindType = [None, '']
+    optional_remindType = [
+        (None,),
+        ('',)
+    ]
 
     @parameterized.expand(optional_remindType)
     def testCase_13(self, param):
@@ -295,7 +307,10 @@ class TestCaseSetNoteInfoInput(unittest.TestCase):
         expected = {'errorCode': -7, 'errorMsg': '参数不合法！'}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    optional_groupId = [None, '']
+    optional_groupId = [
+        (None,),
+        ('',)
+    ]
 
     @parameterized.expand(optional_groupId)
     def testCase_16(self, param):
