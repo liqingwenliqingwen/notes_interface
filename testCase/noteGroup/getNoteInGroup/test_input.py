@@ -311,7 +311,7 @@ class TestCaseGetNoteInGroupInput(unittest.TestCase):
         expected = {'responseTime': 0, 'webNotes': list}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    optional_startIndex = [-1, 1.5]
+    optional_startIndex = [(-1,),( 1.5,)]
 
     @parameterized.expand(optional_startIndex)
     def testCase_07(self, param):
@@ -548,7 +548,7 @@ class TestCaseGetNoteInGroupInput(unittest.TestCase):
         expected = {'errorCode': -7, 'errorMsg': ''}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    optional_rows_decimal = [10.5, -10]
+    optional_rows_decimal = [(10.5,),( -10,)]
 
     @parameterized.expand(optional_rows)
     def testCase_12(self, param):

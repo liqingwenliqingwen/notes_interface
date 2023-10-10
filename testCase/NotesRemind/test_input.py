@@ -220,7 +220,7 @@ class TestCaseGetNotesRemindInput(unittest.TestCase):
         expected = {'responseTime': 0, 'webNotes': list}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    must_key_remindStartTime = [1.5, '5']
+    must_key_remindStartTime = [(1.5,), ('5',)]
 
     @parameterized.expand(must_key_remindStartTime)
     def testCase_05(self, param):
@@ -312,7 +312,7 @@ class TestCaseGetNotesRemindInput(unittest.TestCase):
         expected = {'errorCode': -7, 'errorMsg': 'remindTime Requested!'}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    must_key_remindEndTime = [0, -1704072587]
+    must_key_remindEndTime = [(0,), (-1704072587,)]
 
     @parameterized.expand(must_key_remindStartTime)
     def testCase_07(self, param):
@@ -357,7 +357,7 @@ class TestCaseGetNotesRemindInput(unittest.TestCase):
         expected = {'errorCode': -7, 'errorMsg': 'remindTime Requested!'}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    must_key_remindEndTime_ = [1.5, '5']
+    must_key_remindEndTime_ = [(1.5,), ('5',)]
 
     @parameterized.expand(must_key_remindEndTime_)
     def testCase_08(self, param):
@@ -493,7 +493,7 @@ class TestCaseGetNotesRemindInput(unittest.TestCase):
         expected = {'responseTime': 0, 'webNotes': list}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    startIndex = [-1, 1.5]
+    startIndex = [(-1,), (1.5,)]
 
     @parameterized.expand(startIndex)
     def testCase_11(self, param):
@@ -768,7 +768,7 @@ class TestCaseGetNotesRemindInput(unittest.TestCase):
         expected = {'responseTime': 0, 'webNotes': list}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    rows = [-1, 1.5]
+    rows = [(-1,), (1.5,)]
 
     @parameterized.expand(rows)
     def testCase_17(self, param):
