@@ -35,7 +35,10 @@ class TestCaseDeleteNoteSvrInput(unittest.TestCase):
         """清除数据"""
         self.wipeNote.wipeNote(self.userId, self.sid)
 
-    must_key_noteId_None = [None, '']
+    must_key_noteId_None = ([
+        (None,),
+        ('',)
+    ])
 
     @parameterized.expand(must_key_noteId_None)
     def testCase_01(self, param):

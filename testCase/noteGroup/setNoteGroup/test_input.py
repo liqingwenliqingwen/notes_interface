@@ -33,7 +33,10 @@ class TestCaseSetNoteGroupInput(unittest.TestCase):
         """清除数据"""
         self.wipeNote.wipeNote(self.userId, self.sid)
 
-    groupId = [None, '']
+    groupId = [
+        (None,),
+        ('',)
+    ]
 
     @parameterized.expand(groupId)
     def testCase_01(self, param):
@@ -98,7 +101,10 @@ class TestCaseSetNoteGroupInput(unittest.TestCase):
         expected = {'responseTime': int, 'updateTime': int}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    must_key_groupName = [None, '']
+    must_key_groupName = [
+        (None,),
+        ('',)
+    ]
 
     @parameterized.expand(must_key_groupName)
     def testCase_05(self, param):

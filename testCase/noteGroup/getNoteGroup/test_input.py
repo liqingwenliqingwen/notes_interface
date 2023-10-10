@@ -34,7 +34,10 @@ class TestCaseGetNoteGroupInput(unittest.TestCase):
         """清除数据"""
         self.wipeNote.wipeNote(self.userId, self.sid)
 
-    optional_excludeInvalid = [None, '']
+    optional_excludeInvalid = [
+        (None,),
+        ('',)
+    ]
 
     @parameterized.expand(optional_excludeInvalid)
     def testCase_01(self, param):

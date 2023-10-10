@@ -42,7 +42,10 @@ class TestCaseGetNoteInGroupInput(unittest.TestCase):
         # self.wipeNoteGroup.testCase_01_wipeNoteGroup(self.userId, self.sid)
         self.wipeNote.wipeNote(self.userId, self.sid)
 
-    must_key = [None, '']
+    must_key = [
+        (None,),
+        ('',)
+    ]
 
     @parameterized.expand(must_key)
     def testCase_01(self, param):
@@ -259,7 +262,10 @@ class TestCaseGetNoteInGroupInput(unittest.TestCase):
         expected = {'responseTime': 0, 'webNotes': []}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    optional_startIndex = [None, '']
+    optional_startIndex = [
+        (None,),
+        ('',)
+    ]
 
     @parameterized.expand(optional_startIndex)
     def testCase_06(self, param):
@@ -443,7 +449,10 @@ class TestCaseGetNoteInGroupInput(unittest.TestCase):
         expected = {'errorCode': -7, 'errorMsg': ''}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    optional_rows = [None, '']
+    optional_rows = [
+        (None,),
+        ('',)
+    ]
 
     @parameterized.expand(optional_rows)
     def testCase_10(self, param):

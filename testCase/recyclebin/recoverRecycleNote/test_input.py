@@ -39,7 +39,10 @@ class TestCaseRecoverRecycleNoteInput(unittest.TestCase):
         """清除数据"""
         self.wipeNote.wipeNote(self.userId, self.sid)
 
-    must_key_userId = [None]
+    must_key_userId = [
+        (None,)
+
+    ]
 
     @parameterized.expand(must_key_userId)
     def testCase_01(self, param):
@@ -68,7 +71,10 @@ class TestCaseRecoverRecycleNoteInput(unittest.TestCase):
         res = self.apiRequests.note_patch(self.host + recoverRecyclePath, self.userId, self.sid, body)
         self.assertEqual(500, res.status_code)
 
-    must_key_userId = ['']
+    must_key_userId = [
+
+        ('',)
+    ]
 
     @parameterized.expand(must_key_userId)
     def testCase_02(self, param):
@@ -269,7 +275,10 @@ class TestCaseRecoverRecycleNoteInput(unittest.TestCase):
         res = self.apiRequests.note_patch(self.host + recoverRecyclePath, self.userId, self.sid, body)
         self.assertEqual(412, res.status_code)
 
-    must_key_noteIds = [[None], ['']]
+    must_key_noteIds = [
+        (None,),
+        ('',)
+    ]
 
     @parameterized.expand(must_key_noteIds)
     def testCase_09(self, param):

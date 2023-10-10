@@ -34,7 +34,10 @@ class TestCaseSetNoteContentInput(unittest.TestCase):
         """清空数据"""
         self.wipeNote.wipeNote(self.userId, self.sid)
 
-    must_key = [None, '']
+    must_key = [
+        (None,),
+        ('',)
+    ]
 
     @parameterized.expand(must_key)
     def testCase_01(self, param):
@@ -182,7 +185,10 @@ class TestCaseSetNoteContentInput(unittest.TestCase):
         expected = {'responseTime': int, 'contentVersion': int, 'contentUpdateTime': int}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    title_None = [None, '']
+    title_None = [
+        (None,),
+        ('',)
+    ]
 
     @parameterized.expand(title_None)
     def testCase_06(self, param):
@@ -299,7 +305,10 @@ class TestCaseSetNoteContentInput(unittest.TestCase):
         expected = {'responseTime': int, 'contentVersion': contentVersion, 'contentUpdateTime': int}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    summary_None = [None, '']
+    summary_None = [
+        (None,),
+        ('',)
+    ]
 
     @parameterized.expand(summary_None)
     def testCase_10(self, param):
@@ -414,7 +423,10 @@ class TestCaseSetNoteContentInput(unittest.TestCase):
         expected = {'responseTime': int, 'contentVersion': int, 'contentUpdateTime': int}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    body_text = [None, '']
+    body_text = [
+        (None,),
+        ('',)
+    ]
 
     @parameterized.expand(body_text)
     def testCase_14(self, param):
@@ -498,7 +510,10 @@ class TestCaseSetNoteContentInput(unittest.TestCase):
         expected = {'responseTime': int, 'contentVersion': int, 'contentUpdateTime': int}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    localContentVersion_None = [None, '']
+    localContentVersion_None = [
+        (None,),
+        ('',)
+    ]
 
     @parameterized.expand(localContentVersion_None)
     def testCase_17(self, param):
@@ -588,7 +603,10 @@ class TestCaseSetNoteContentInput(unittest.TestCase):
         expected = {'responseTime': int, 'contentVersion': int, 'contentUpdateTime': int}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    BodyType = [None, '']
+    BodyType = [
+        (None,),
+        ('',)
+    ]
 
     @parameterized.expand(BodyType)
     def testCase_20(self, param):

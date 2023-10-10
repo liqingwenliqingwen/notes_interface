@@ -28,7 +28,10 @@ class TestCaseGetNoteBodyInput(unittest.TestCase):
         """清除测试数据"""
         self.wipeNote.wipeNote(self.userId, self.sid)
 
-    noteId_must_key_None = [None]
+    noteId_must_key_None = ([
+
+        ('',)
+    ])
 
     @parameterized.expand(noteId_must_key_None)
     def testCase_01(self, param):
@@ -41,10 +44,13 @@ class TestCaseGetNoteBodyInput(unittest.TestCase):
         }
         res = self.apiRequests.note_post(self.host + self.getNoteBody, self.userId, self.sid, body)
         self.assertEqual(500, res.status_code)
-        expected = {'errorCode': -7, 'errorMsg': '参数不合法！'}
+        expected = {'errorCode': -7, 'errorMsg': ''}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    noteId_must_key_null = ['']
+    noteId_must_key_null = ([
+        (None,)
+
+    ])
 
     @parameterized.expand(noteId_must_key_null)
     def testCase_02(self, param):
@@ -57,7 +63,7 @@ class TestCaseGetNoteBodyInput(unittest.TestCase):
         }
         res = self.apiRequests.note_post(self.host + self.getNoteBody, self.userId, self.sid, body)
         self.assertEqual(500, res.status_code)
-        expected = {'errorCode': -7, 'errorMsg': ''}
+        expected = {'errorCode': -7, 'errorMsg': '参数不合法！'}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
     def testCase_03(self):

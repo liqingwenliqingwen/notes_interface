@@ -34,7 +34,10 @@ class TestCaseGetNotePageInput(unittest.TestCase):
 
         self.wipeNote.wipeNote(self.userId, self.sid)
 
-    must_key_userId = [236948373.5, None]
+    must_key_userId = [
+        (None,),
+        (236948373.5,)
+    ]
 
     @parameterized.expand(must_key_userId)
     def testCase_01(self, param):
@@ -154,7 +157,10 @@ class TestCaseGetNotePageInput(unittest.TestCase):
                     'message': 'No message available', 'path': str}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    abnormal_startIndex = [None, 1.5]
+    abnormal_startIndex = [
+        (None,),
+        (1.5,)
+    ]
 
     @parameterized.expand(abnormal_startIndex)
     def testCase_09(self, param):
@@ -227,7 +233,10 @@ class TestCaseGetNotePageInput(unittest.TestCase):
         expected = {'responseTime': 0, 'webNotes': list}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    must_key_rows = [None, 1.5]
+    must_key_rows = [
+        (None,),
+        (1.5,)
+    ]
 
     @parameterized.expand(must_key_rows)
     def testCase_14(self, param):
@@ -243,7 +252,9 @@ class TestCaseGetNotePageInput(unittest.TestCase):
         expected = {'errorCode': -7, 'errorMsg': '参数类型错误！'}
         self.outPutResult.check_out(expected=expected, actual=res.json())
 
-    must_key_rows = ['']
+    must_key_rows = [
+        ('',)
+    ]
 
     @parameterized.expand(must_key_rows)
     def testCase_15(self, param):

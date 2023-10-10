@@ -35,7 +35,10 @@ class TestCaseDeleteNoteGroupInput(unittest.TestCase):
         """清除数据"""
         self.wipeNote.wipeNote(self.userId, self.sid)
 
-    must_key_Null = [None, '']
+    must_key_Null = [
+        (None,),
+        ('',)
+    ]
 
     @parameterized.expand(must_key_Null)
     def testCase_01(self, param):
