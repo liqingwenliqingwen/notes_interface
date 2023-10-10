@@ -43,7 +43,7 @@ class TestCaseSetNoteInfoHandle(unittest.TestCase):
         """清空数据"""
         self.wipeNote.wipeNote(self.userId, self.sid)
 
-    star_enum = [0, 1]
+    star_enum = [(0,), (1,)]
 
     @parameterized.expand(star_enum)
     def testCase_01(self, param):
@@ -87,7 +87,7 @@ class TestCaseSetNoteInfoHandle(unittest.TestCase):
         self.assertEqual([noteId], resNoteId)
         self.assertEqual([param], resStar)
 
-    remindType_enum = [0, 1, 2]
+    remindType_enum = [(0,),( 1,),( 2,)]
 
     @parameterized.expand(remindType_enum)
     def testCase_02(self, param):

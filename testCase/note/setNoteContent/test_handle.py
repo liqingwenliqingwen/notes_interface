@@ -37,7 +37,7 @@ class SetNoteContentHandle(unittest.TestCase):
         """清除数据"""
         self.wipeNote.wipeNote(self.userId, self.sid)
 
-    body_text_enum = [0, 1]
+    body_text_enum = [(0,),( 1,)]
 
     @parameterized.expand(body_text_enum)
     def testCase_01_set_note_handle_bodyType_enum(self, param):
