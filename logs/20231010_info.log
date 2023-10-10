@@ -1,0 +1,864 @@
+[STEP]09:01:31:934-wipeNote.py:21  >> ----------------------清空便签数据------------------------------
+[INFO]09:01:31:945-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/home/startindex/0/rows/50/notes
+[INFO]09:01:31:948-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:32:140-apiRequest.py:45  >> res.code:200
+[INFO]09:01:32:144-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:32:146-wipeNote.py:26  >> res.status_code:200
+[INFO]09:01:32:152-wipeNote.py:27  >> res.json():{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:32:155-wipeNote.py:30  >> noteIds列表为:[]
+[INFO]09:01:32:157-wipeNote.py:32  >> 获取到的列表长度为空，无需清空
+[INFO]09:01:32:159-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/invalid/startindex/0/rows/50/notes
+[INFO]09:01:32:161-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:32:247-apiRequest.py:45  >> res.code:200
+[INFO]09:01:32:249-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:32:251-wipeNote.py:44  >> 回收站便签数据[]
+[INFO]09:01:32:253-wipeNote.py:47  >> 回收站的数据为空，无需清空
+[INFO]09:01:32:254-caseLog.py:51  >> Class Name:TestCaseSetNoteGroupInput
+[INFO]09:01:32:256-caseLog.py:52  >> Method Name:testCase_01_0
+[INFO]09:01:32:257-caseLog.py:53  >> Test Description:新增便签数据冒烟 [with param=None]
+[STEP]09:01:32:268-test_input.py:41  >> STEP1:新增一个分组便签
+[INFO]09:01:32:271-apiRequest.py:23  >> url:http://note-api.wps.cn/v3/notesvr/set/notegroup
+[INFO]09:01:32:273-apiRequest.py:24  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:32:275-apiRequest.py:25  >> body:{"groupId": null, "groupName": "\u65b0\u589e\u5206\u7ec41696899692269_groupId", "order": 0}
+[INFO]09:01:32:326-apiRequest.py:27  >> res.code:500
+[INFO]09:01:32:329-apiRequest.py:28  >> res.json:{'errorCode': -7, 'errorMsg': '参数不合法！'}
+[STEP]09:01:32:331-wipeNote.py:21  >> ----------------------清空便签数据------------------------------
+[INFO]09:01:32:334-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/home/startindex/0/rows/50/notes
+[INFO]09:01:32:336-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:32:434-apiRequest.py:45  >> res.code:200
+[INFO]09:01:32:436-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:32:438-wipeNote.py:26  >> res.status_code:200
+[INFO]09:01:32:440-wipeNote.py:27  >> res.json():{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:32:442-wipeNote.py:30  >> noteIds列表为:[]
+[INFO]09:01:32:443-wipeNote.py:32  >> 获取到的列表长度为空，无需清空
+[INFO]09:01:32:445-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/invalid/startindex/0/rows/50/notes
+[INFO]09:01:32:447-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:32:539-apiRequest.py:45  >> res.code:200
+[INFO]09:01:32:541-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:32:543-wipeNote.py:44  >> 回收站便签数据[]
+[INFO]09:01:32:545-wipeNote.py:47  >> 回收站的数据为空，无需清空
+[INFO]09:01:32:547-caseLog.py:51  >> Class Name:TestCaseSetNoteGroupInput
+[INFO]09:01:32:548-caseLog.py:52  >> Method Name:testCase_01_1_
+[INFO]09:01:32:550-caseLog.py:53  >> Test Description:新增便签数据冒烟 [with param='']
+[STEP]09:01:32:552-test_input.py:41  >> STEP1:新增一个分组便签
+[INFO]09:01:32:554-apiRequest.py:23  >> url:http://note-api.wps.cn/v3/notesvr/set/notegroup
+[INFO]09:01:32:556-apiRequest.py:24  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:32:558-apiRequest.py:25  >> body:{"groupId": "", "groupName": "\u65b0\u589e\u5206\u7ec41696899692552_groupId", "order": 0}
+[INFO]09:01:32:620-apiRequest.py:27  >> res.code:500
+[INFO]09:01:32:622-apiRequest.py:28  >> res.json:{'errorCode': -7, 'errorMsg': '参数不合法！'}
+[STEP]09:01:32:624-wipeNote.py:21  >> ----------------------清空便签数据------------------------------
+[INFO]09:01:32:626-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/home/startindex/0/rows/50/notes
+[INFO]09:01:32:628-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:32:722-apiRequest.py:45  >> res.code:200
+[INFO]09:01:32:724-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:32:726-wipeNote.py:26  >> res.status_code:200
+[INFO]09:01:32:728-wipeNote.py:27  >> res.json():{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:32:730-wipeNote.py:30  >> noteIds列表为:[]
+[INFO]09:01:32:731-wipeNote.py:32  >> 获取到的列表长度为空，无需清空
+[INFO]09:01:32:733-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/invalid/startindex/0/rows/50/notes
+[INFO]09:01:32:735-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:32:816-apiRequest.py:45  >> res.code:200
+[INFO]09:01:32:818-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:32:820-wipeNote.py:44  >> 回收站便签数据[]
+[INFO]09:01:32:822-wipeNote.py:47  >> 回收站的数据为空，无需清空
+[INFO]09:01:32:823-caseLog.py:51  >> Class Name:TestCaseSetNoteGroupInput
+[INFO]09:01:32:825-caseLog.py:52  >> Method Name:testCase_02
+[INFO]09:01:32:826-caseLog.py:53  >> Test Description:删除groupId key
+[STEP]09:01:32:828-test_input.py:55  >> STEP1:新增一个分组便签
+[INFO]09:01:32:830-apiRequest.py:23  >> url:http://note-api.wps.cn/v3/notesvr/set/notegroup
+[INFO]09:01:32:832-apiRequest.py:24  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:32:834-apiRequest.py:25  >> body:{"groupName": "\u65b0\u589e\u5206\u7ec41696899692829_groupId", "order": 0}
+[INFO]09:01:32:883-apiRequest.py:27  >> res.code:500
+[INFO]09:01:32:885-apiRequest.py:28  >> res.json:{'errorCode': -7, 'errorMsg': '参数不合法！'}
+[STEP]09:01:32:888-wipeNote.py:21  >> ----------------------清空便签数据------------------------------
+[INFO]09:01:32:890-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/home/startindex/0/rows/50/notes
+[INFO]09:01:32:892-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:33:000-apiRequest.py:45  >> res.code:200
+[INFO]09:01:33:003-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:33:005-wipeNote.py:26  >> res.status_code:200
+[INFO]09:01:33:006-wipeNote.py:27  >> res.json():{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:33:008-wipeNote.py:30  >> noteIds列表为:[]
+[INFO]09:01:33:010-wipeNote.py:32  >> 获取到的列表长度为空，无需清空
+[INFO]09:01:33:012-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/invalid/startindex/0/rows/50/notes
+[INFO]09:01:33:014-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:33:092-apiRequest.py:45  >> res.code:200
+[INFO]09:01:33:094-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:33:097-wipeNote.py:44  >> 回收站便签数据[]
+[INFO]09:01:33:099-wipeNote.py:47  >> 回收站的数据为空，无需清空
+[INFO]09:01:33:101-caseLog.py:51  >> Class Name:TestCaseSetNoteGroupInput
+[INFO]09:01:33:102-caseLog.py:52  >> Method Name:testCase_03_0_999999999999999999999999999999999999999999999999999999999999999999
+[INFO]09:01:33:104-caseLog.py:53  >> Test Description:group超长1，99999999 [with param='9999999999999999999999999999999...9999999999999999999999999999999']
+[STEP]09:01:33:107-test_input.py:73  >> STEP1:新增一个分组便签
+[INFO]09:01:33:109-apiRequest.py:23  >> url:http://note-api.wps.cn/v3/notesvr/set/notegroup
+[INFO]09:01:33:111-apiRequest.py:24  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:33:113-apiRequest.py:25  >> body:{"groupId": "999999999999999999999999999999999999999999999999999999999999999999", "groupName": "\u65b0\u589e\u5206\u7ec41696899693107_groupId", "order": 0}
+[INFO]09:01:33:167-apiRequest.py:27  >> res.code:500
+[INFO]09:01:33:170-apiRequest.py:28  >> res.json:{'errorCode': -7, 'errorMsg': '参数不合法！'}
+[STEP]09:01:33:172-wipeNote.py:21  >> ----------------------清空便签数据------------------------------
+[INFO]09:01:33:174-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/home/startindex/0/rows/50/notes
+[INFO]09:01:33:177-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:33:273-apiRequest.py:45  >> res.code:200
+[INFO]09:01:33:276-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:33:278-wipeNote.py:26  >> res.status_code:200
+[INFO]09:01:33:281-wipeNote.py:27  >> res.json():{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:33:283-wipeNote.py:30  >> noteIds列表为:[]
+[INFO]09:01:33:285-wipeNote.py:32  >> 获取到的列表长度为空，无需清空
+[INFO]09:01:33:287-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/invalid/startindex/0/rows/50/notes
+[INFO]09:01:33:289-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:33:378-apiRequest.py:45  >> res.code:200
+[INFO]09:01:33:380-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:33:381-wipeNote.py:44  >> 回收站便签数据[]
+[INFO]09:01:33:383-wipeNote.py:47  >> 回收站的数据为空，无需清空
+[INFO]09:01:33:385-caseLog.py:51  >> Class Name:TestCaseSetNoteGroupInput
+[INFO]09:01:33:387-caseLog.py:52  >> Method Name:testCase_04
+[INFO]09:01:33:388-caseLog.py:53  >> Test Description:group包括中文
+[STEP]09:01:33:390-test_input.py:88  >> STEP1:新增一个分组便签
+[INFO]09:01:33:391-apiRequest.py:23  >> url:http://note-api.wps.cn/v3/notesvr/set/notegroup
+[INFO]09:01:33:393-apiRequest.py:24  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:33:395-apiRequest.py:25  >> body:{"groupId": "\u4f60\u597d", "groupName": "\u65b0\u589e\u5206\u7ec41696899693390_groupId", "order": 0}
+[INFO]09:01:33:475-apiRequest.py:27  >> res.code:200
+[INFO]09:01:33:477-apiRequest.py:28  >> res.json:{'responseTime': 35, 'updateTime': 1696899692908}
+[STEP]09:01:33:479-wipeNote.py:21  >> ----------------------清空便签数据------------------------------
+[INFO]09:01:33:481-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/home/startindex/0/rows/50/notes
+[INFO]09:01:33:483-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:33:615-apiRequest.py:45  >> res.code:200
+[INFO]09:01:33:617-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:33:619-wipeNote.py:26  >> res.status_code:200
+[INFO]09:01:33:620-wipeNote.py:27  >> res.json():{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:33:621-wipeNote.py:30  >> noteIds列表为:[]
+[INFO]09:01:33:623-wipeNote.py:32  >> 获取到的列表长度为空，无需清空
+[INFO]09:01:33:625-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/invalid/startindex/0/rows/50/notes
+[INFO]09:01:33:627-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:33:704-apiRequest.py:45  >> res.code:200
+[INFO]09:01:33:706-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:33:708-wipeNote.py:44  >> 回收站便签数据[]
+[INFO]09:01:33:710-wipeNote.py:47  >> 回收站的数据为空，无需清空
+[INFO]09:01:33:712-caseLog.py:51  >> Class Name:TestCaseSetNoteGroupInput
+[INFO]09:01:33:713-caseLog.py:52  >> Method Name:testCase_05_0
+[INFO]09:01:33:715-caseLog.py:53  >> Test Description:groupName包括1,None 2，‘’ [with param=None]
+[STEP]09:01:33:717-test_input.py:106  >> STEP1:新增一个分组便签
+[INFO]09:01:33:719-apiRequest.py:23  >> url:http://note-api.wps.cn/v3/notesvr/set/notegroup
+[INFO]09:01:33:721-apiRequest.py:24  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:33:724-apiRequest.py:25  >> body:{"groupId": "1696899693718_groupId", "groupName": null, "order": 0}
+[INFO]09:01:33:770-apiRequest.py:27  >> res.code:500
+[INFO]09:01:33:772-apiRequest.py:28  >> res.json:{'errorCode': -7, 'errorMsg': '参数不合法！'}
+[STEP]09:01:33:774-wipeNote.py:21  >> ----------------------清空便签数据------------------------------
+[INFO]09:01:33:776-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/home/startindex/0/rows/50/notes
+[INFO]09:01:33:778-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:33:889-apiRequest.py:45  >> res.code:200
+[INFO]09:01:33:892-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:33:893-wipeNote.py:26  >> res.status_code:200
+[INFO]09:01:33:895-wipeNote.py:27  >> res.json():{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:33:897-wipeNote.py:30  >> noteIds列表为:[]
+[INFO]09:01:33:899-wipeNote.py:32  >> 获取到的列表长度为空，无需清空
+[INFO]09:01:33:902-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/invalid/startindex/0/rows/50/notes
+[INFO]09:01:33:904-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:33:996-apiRequest.py:45  >> res.code:200
+[INFO]09:01:33:998-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:34:000-wipeNote.py:44  >> 回收站便签数据[]
+[INFO]09:01:34:002-wipeNote.py:47  >> 回收站的数据为空，无需清空
+[INFO]09:01:34:004-caseLog.py:51  >> Class Name:TestCaseSetNoteGroupInput
+[INFO]09:01:34:006-caseLog.py:52  >> Method Name:testCase_05_1_
+[INFO]09:01:34:007-caseLog.py:53  >> Test Description:groupName包括1,None 2，‘’ [with param='']
+[STEP]09:01:34:010-test_input.py:106  >> STEP1:新增一个分组便签
+[INFO]09:01:34:012-apiRequest.py:23  >> url:http://note-api.wps.cn/v3/notesvr/set/notegroup
+[INFO]09:01:34:014-apiRequest.py:24  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:34:016-apiRequest.py:25  >> body:{"groupId": "1696899694010_groupId", "groupName": "", "order": 0}
+[INFO]09:01:34:072-apiRequest.py:27  >> res.code:500
+[INFO]09:01:34:074-apiRequest.py:28  >> res.json:{'errorCode': -7, 'errorMsg': '参数不合法！'}
+[STEP]09:01:34:077-wipeNote.py:21  >> ----------------------清空便签数据------------------------------
+[INFO]09:01:34:079-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/home/startindex/0/rows/50/notes
+[INFO]09:01:34:081-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:34:209-apiRequest.py:45  >> res.code:200
+[INFO]09:01:34:211-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:34:213-wipeNote.py:26  >> res.status_code:200
+[INFO]09:01:34:215-wipeNote.py:27  >> res.json():{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:34:217-wipeNote.py:30  >> noteIds列表为:[]
+[INFO]09:01:34:218-wipeNote.py:32  >> 获取到的列表长度为空，无需清空
+[INFO]09:01:34:220-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/invalid/startindex/0/rows/50/notes
+[INFO]09:01:34:222-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:34:307-apiRequest.py:45  >> res.code:200
+[INFO]09:01:34:309-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:34:310-wipeNote.py:44  >> 回收站便签数据[]
+[INFO]09:01:34:311-wipeNote.py:47  >> 回收站的数据为空，无需清空
+[INFO]09:01:34:313-caseLog.py:51  >> Class Name:TestCaseSetNoteGroupInput
+[INFO]09:01:34:315-caseLog.py:52  >> Method Name:testCase_06
+[INFO]09:01:34:316-caseLog.py:53  >> Test Description:groupName删除key‘’
+[STEP]09:01:34:318-test_input.py:121  >> STEP1:新增一个分组便签
+[INFO]09:01:34:319-apiRequest.py:23  >> url:http://note-api.wps.cn/v3/notesvr/set/notegroup
+[INFO]09:01:34:321-apiRequest.py:24  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:34:323-apiRequest.py:25  >> body:{"groupId": "1696899694318_groupId", "order": 0}
+[INFO]09:01:34:373-apiRequest.py:27  >> res.code:500
+[INFO]09:01:34:375-apiRequest.py:28  >> res.json:{'errorCode': -7, 'errorMsg': '参数不合法！'}
+[STEP]09:01:34:377-wipeNote.py:21  >> ----------------------清空便签数据------------------------------
+[INFO]09:01:34:379-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/home/startindex/0/rows/50/notes
+[INFO]09:01:34:381-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:34:475-apiRequest.py:45  >> res.code:200
+[INFO]09:01:34:477-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:34:478-wipeNote.py:26  >> res.status_code:200
+[INFO]09:01:34:480-wipeNote.py:27  >> res.json():{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:34:482-wipeNote.py:30  >> noteIds列表为:[]
+[INFO]09:01:34:484-wipeNote.py:32  >> 获取到的列表长度为空，无需清空
+[INFO]09:01:34:485-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/invalid/startindex/0/rows/50/notes
+[INFO]09:01:34:487-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:34:562-apiRequest.py:45  >> res.code:200
+[INFO]09:01:34:564-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:34:566-wipeNote.py:44  >> 回收站便签数据[]
+[INFO]09:01:34:567-wipeNote.py:47  >> 回收站的数据为空，无需清空
+[INFO]09:01:34:569-caseLog.py:51  >> Class Name:TestCaseSetNoteGroupInput
+[INFO]09:01:34:571-caseLog.py:52  >> Method Name:testCase_07_0_1_
+[INFO]09:01:34:572-caseLog.py:53  >> Test Description:groupName删除key‘’ [with param='1@!!!']
+[STEP]09:01:34:574-test_input.py:140  >> STEP1:新增一个分组便签
+[INFO]09:01:34:576-apiRequest.py:23  >> url:http://note-api.wps.cn/v3/notesvr/set/notegroup
+[INFO]09:01:34:578-apiRequest.py:24  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:34:580-apiRequest.py:25  >> body:{"groupId": "1696899694574_groupId", "groupName": "1@!!!", "order": 0}
+[INFO]09:01:34:663-apiRequest.py:27  >> res.code:200
+[INFO]09:01:34:665-apiRequest.py:28  >> res.json:{'responseTime': 40, 'updateTime': 1696899694097}
+[STEP]09:01:34:668-wipeNote.py:21  >> ----------------------清空便签数据------------------------------
+[INFO]09:01:34:669-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/home/startindex/0/rows/50/notes
+[INFO]09:01:34:671-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:34:767-apiRequest.py:45  >> res.code:200
+[INFO]09:01:34:769-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:34:771-wipeNote.py:26  >> res.status_code:200
+[INFO]09:01:34:773-wipeNote.py:27  >> res.json():{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:34:775-wipeNote.py:30  >> noteIds列表为:[]
+[INFO]09:01:34:776-wipeNote.py:32  >> 获取到的列表长度为空，无需清空
+[INFO]09:01:34:778-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/invalid/startindex/0/rows/50/notes
+[INFO]09:01:34:780-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:34:878-apiRequest.py:45  >> res.code:200
+[INFO]09:01:34:879-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:34:881-wipeNote.py:44  >> 回收站便签数据[]
+[INFO]09:01:34:883-wipeNote.py:47  >> 回收站的数据为空，无需清空
+[INFO]09:01:34:885-caseLog.py:51  >> Class Name:TestCaseSetNoteGroupInput
+[INFO]09:01:34:886-caseLog.py:52  >> Method Name:testCase_07_1_99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+[INFO]09:01:34:888-caseLog.py:53  >> Test Description:groupName删除key‘’ [with param='9999999999999999999999999999999...9999999999999999999999999999999']
+[STEP]09:01:34:890-test_input.py:140  >> STEP1:新增一个分组便签
+[INFO]09:01:34:892-apiRequest.py:23  >> url:http://note-api.wps.cn/v3/notesvr/set/notegroup
+[INFO]09:01:34:894-apiRequest.py:24  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:34:896-apiRequest.py:25  >> body:{"groupId": "1696899694890_groupId", "groupName": "99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999", "order": 0}
+[INFO]09:01:34:997-apiRequest.py:27  >> res.code:200
+[INFO]09:01:34:999-apiRequest.py:28  >> res.json:{'responseTime': 50, 'updateTime': 1696899694411}
+[STEP]09:01:35:003-wipeNote.py:21  >> ----------------------清空便签数据------------------------------
+[INFO]09:01:35:006-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/home/startindex/0/rows/50/notes
+[INFO]09:01:35:009-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:35:115-apiRequest.py:45  >> res.code:200
+[INFO]09:01:35:117-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:35:119-wipeNote.py:26  >> res.status_code:200
+[INFO]09:01:35:120-wipeNote.py:27  >> res.json():{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:35:122-wipeNote.py:30  >> noteIds列表为:[]
+[INFO]09:01:35:124-wipeNote.py:32  >> 获取到的列表长度为空，无需清空
+[INFO]09:01:35:125-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/invalid/startindex/0/rows/50/notes
+[INFO]09:01:35:127-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:35:234-apiRequest.py:45  >> res.code:200
+[INFO]09:01:35:236-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:35:239-wipeNote.py:44  >> 回收站便签数据[]
+[INFO]09:01:35:240-wipeNote.py:47  >> 回收站的数据为空，无需清空
+[INFO]09:01:35:242-caseLog.py:51  >> Class Name:TestCaseSetNoteGroupInput
+[INFO]09:01:35:243-caseLog.py:52  >> Method Name:testCase_08_0
+[INFO]09:01:35:245-caseLog.py:53  >> Test Description:groupName删除key‘’ [with param=0]
+[STEP]09:01:35:247-test_input.py:155  >> STEP1:新增一个分组便签
+[INFO]09:01:35:249-apiRequest.py:23  >> url:http://note-api.wps.cn/v3/notesvr/set/notegroup
+[INFO]09:01:35:251-apiRequest.py:24  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:35:253-apiRequest.py:25  >> body:{"groupId": "1696899695247_groupId", "groupName": "\u65b0\u589e\u5206\u7ec41696899695247_groupId", "order": 0}
+[INFO]09:01:35:346-apiRequest.py:27  >> res.code:200
+[INFO]09:01:35:348-apiRequest.py:28  >> res.json:{'responseTime': 44, 'updateTime': 1696899694765}
+[STEP]09:01:35:350-wipeNote.py:21  >> ----------------------清空便签数据------------------------------
+[INFO]09:01:35:352-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/home/startindex/0/rows/50/notes
+[INFO]09:01:35:354-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:35:453-apiRequest.py:45  >> res.code:200
+[INFO]09:01:35:455-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:35:457-wipeNote.py:26  >> res.status_code:200
+[INFO]09:01:35:459-wipeNote.py:27  >> res.json():{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:35:460-wipeNote.py:30  >> noteIds列表为:[]
+[INFO]09:01:35:462-wipeNote.py:32  >> 获取到的列表长度为空，无需清空
+[INFO]09:01:35:464-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/invalid/startindex/0/rows/50/notes
+[INFO]09:01:35:465-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:35:549-apiRequest.py:45  >> res.code:200
+[INFO]09:01:35:551-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:35:553-wipeNote.py:44  >> 回收站便签数据[]
+[INFO]09:01:35:555-wipeNote.py:47  >> 回收站的数据为空，无需清空
+[INFO]09:01:35:557-caseLog.py:51  >> Class Name:TestCaseSetNoteGroupInput
+[INFO]09:01:35:558-caseLog.py:52  >> Method Name:testCase_08_1
+[INFO]09:01:35:560-caseLog.py:53  >> Test Description:groupName删除key‘’ [with param=1.5]
+[STEP]09:01:35:561-test_input.py:155  >> STEP1:新增一个分组便签
+[INFO]09:01:35:564-apiRequest.py:23  >> url:http://note-api.wps.cn/v3/notesvr/set/notegroup
+[INFO]09:01:35:566-apiRequest.py:24  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:35:568-apiRequest.py:25  >> body:{"groupId": "1696899695562_groupId", "groupName": "\u65b0\u589e\u5206\u7ec41696899695562_groupId", "order": 1.5}
+[INFO]09:01:35:651-apiRequest.py:27  >> res.code:200
+[INFO]09:01:35:653-apiRequest.py:28  >> res.json:{'responseTime': 38, 'updateTime': 1696899695087}
+[STEP]09:01:35:656-wipeNote.py:21  >> ----------------------清空便签数据------------------------------
+[INFO]09:01:35:658-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/home/startindex/0/rows/50/notes
+[INFO]09:01:35:660-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:35:766-apiRequest.py:45  >> res.code:200
+[INFO]09:01:35:769-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:35:770-wipeNote.py:26  >> res.status_code:200
+[INFO]09:01:35:772-wipeNote.py:27  >> res.json():{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:35:774-wipeNote.py:30  >> noteIds列表为:[]
+[INFO]09:01:35:776-wipeNote.py:32  >> 获取到的列表长度为空，无需清空
+[INFO]09:01:35:778-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/invalid/startindex/0/rows/50/notes
+[INFO]09:01:35:781-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:35:872-apiRequest.py:45  >> res.code:200
+[INFO]09:01:35:874-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:35:876-wipeNote.py:44  >> 回收站便签数据[]
+[INFO]09:01:35:878-wipeNote.py:47  >> 回收站的数据为空，无需清空
+[INFO]09:01:35:879-caseLog.py:51  >> Class Name:TestCaseSetNoteGroupInput
+[INFO]09:01:35:881-caseLog.py:52  >> Method Name:testCase_09_0_1
+[INFO]09:01:35:882-caseLog.py:53  >> Test Description:groupName删除key‘’ [with param='1']
+[STEP]09:01:35:884-test_input.py:170  >> STEP1:新增一个分组便签
+[INFO]09:01:35:887-apiRequest.py:23  >> url:http://note-api.wps.cn/v3/notesvr/set/notegroup
+[INFO]09:01:35:889-apiRequest.py:24  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:35:891-apiRequest.py:25  >> body:{"groupId": "1696899695886_groupId", "groupName": "\u65b0\u589e\u5206\u7ec41696899695886_groupId", "order": "1"}
+[INFO]09:01:35:973-apiRequest.py:27  >> res.code:200
+[INFO]09:01:35:976-apiRequest.py:28  >> res.json:{'responseTime': 37, 'updateTime': 1696899695410}
+[STEP]09:01:35:978-wipeNote.py:21  >> ----------------------清空便签数据------------------------------
+[INFO]09:01:35:979-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/home/startindex/0/rows/50/notes
+[INFO]09:01:35:981-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:36:072-apiRequest.py:45  >> res.code:200
+[INFO]09:01:36:074-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:36:076-wipeNote.py:26  >> res.status_code:200
+[INFO]09:01:36:078-wipeNote.py:27  >> res.json():{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:36:079-wipeNote.py:30  >> noteIds列表为:[]
+[INFO]09:01:36:081-wipeNote.py:32  >> 获取到的列表长度为空，无需清空
+[INFO]09:01:36:083-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/invalid/startindex/0/rows/50/notes
+[INFO]09:01:36:084-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:36:180-apiRequest.py:45  >> res.code:200
+[INFO]09:01:36:182-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:36:184-wipeNote.py:44  >> 回收站便签数据[]
+[INFO]09:01:36:186-wipeNote.py:47  >> 回收站的数据为空，无需清空
+[INFO]09:01:36:187-caseLog.py:51  >> Class Name:TestCaseSetNoteGroupInput
+[INFO]09:01:36:189-caseLog.py:52  >> Method Name:testCase_09_1_1
+[INFO]09:01:36:191-caseLog.py:53  >> Test Description:groupName删除key‘’ [with param='1']
+[STEP]09:01:36:192-test_input.py:170  >> STEP1:新增一个分组便签
+[INFO]09:01:36:194-apiRequest.py:23  >> url:http://note-api.wps.cn/v3/notesvr/set/notegroup
+[INFO]09:01:36:196-apiRequest.py:24  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:36:198-apiRequest.py:25  >> body:{"groupId": "1696899696193_groupId", "groupName": "\u65b0\u589e\u5206\u7ec41696899696193_groupId", "order": "1"}
+[INFO]09:01:36:277-apiRequest.py:27  >> res.code:200
+[INFO]09:01:36:279-apiRequest.py:28  >> res.json:{'responseTime': 33, 'updateTime': 1696899695710}
+[STEP]09:01:36:281-wipeNote.py:21  >> ----------------------清空便签数据------------------------------
+[INFO]09:01:36:283-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/home/startindex/0/rows/50/notes
+[INFO]09:01:36:285-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:36:372-apiRequest.py:45  >> res.code:200
+[INFO]09:01:36:374-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:36:376-wipeNote.py:26  >> res.status_code:200
+[INFO]09:01:36:377-wipeNote.py:27  >> res.json():{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:36:379-wipeNote.py:30  >> noteIds列表为:[]
+[INFO]09:01:36:381-wipeNote.py:32  >> 获取到的列表长度为空，无需清空
+[INFO]09:01:36:383-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/invalid/startindex/0/rows/50/notes
+[INFO]09:01:36:385-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:36:458-apiRequest.py:45  >> res.code:200
+[INFO]09:01:36:461-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:36:463-wipeNote.py:44  >> 回收站便签数据[]
+[INFO]09:01:36:464-wipeNote.py:47  >> 回收站的数据为空，无需清空
+[INFO]09:01:36:466-caseLog.py:51  >> Class Name:TestCaseSetNoteGroupInput
+[INFO]09:01:36:468-caseLog.py:52  >> Method Name:testCase_10_0
+[INFO]09:01:36:469-caseLog.py:53  >> Test Description:order删除key‘’ [with param=2147483648]
+[STEP]09:01:36:471-test_input.py:185  >> STEP1:新增一个分组便签
+[INFO]09:01:36:473-apiRequest.py:23  >> url:http://note-api.wps.cn/v3/notesvr/set/notegroup
+[INFO]09:01:36:475-apiRequest.py:24  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:36:477-apiRequest.py:25  >> body:{"groupId": "1696899696472_groupId", "groupName": "\u65b0\u589e\u5206\u7ec41696899696472_groupId"}
+[INFO]09:01:36:562-apiRequest.py:27  >> res.code:200
+[INFO]09:01:36:565-apiRequest.py:28  >> res.json:{'responseTime': 38, 'updateTime': 1696899695993}
+[STEP]09:01:36:568-wipeNote.py:21  >> ----------------------清空便签数据------------------------------
+[INFO]09:01:36:571-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/home/startindex/0/rows/50/notes
+[INFO]09:01:36:574-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:36:662-apiRequest.py:45  >> res.code:200
+[INFO]09:01:36:664-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:36:666-wipeNote.py:26  >> res.status_code:200
+[INFO]09:01:36:668-wipeNote.py:27  >> res.json():{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:36:670-wipeNote.py:30  >> noteIds列表为:[]
+[INFO]09:01:36:671-wipeNote.py:32  >> 获取到的列表长度为空，无需清空
+[INFO]09:01:36:674-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/invalid/startindex/0/rows/50/notes
+[INFO]09:01:36:675-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:36:757-apiRequest.py:45  >> res.code:200
+[INFO]09:01:36:760-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:36:761-wipeNote.py:44  >> 回收站便签数据[]
+[INFO]09:01:36:763-wipeNote.py:47  >> 回收站的数据为空，无需清空
+[INFO]09:01:36:765-caseLog.py:51  >> Class Name:TestCaseSetNoteGroupInput
+[INFO]09:01:36:766-caseLog.py:52  >> Method Name:testCase_10_1
+[INFO]09:01:36:768-caseLog.py:53  >> Test Description:order删除key‘’ [with param=-2147483649]
+[STEP]09:01:36:769-test_input.py:185  >> STEP1:新增一个分组便签
+[INFO]09:01:36:772-apiRequest.py:23  >> url:http://note-api.wps.cn/v3/notesvr/set/notegroup
+[INFO]09:01:36:774-apiRequest.py:24  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:36:776-apiRequest.py:25  >> body:{"groupId": "1696899696770_groupId", "groupName": "\u65b0\u589e\u5206\u7ec41696899696770_groupId"}
+[INFO]09:01:36:854-apiRequest.py:27  >> res.code:200
+[INFO]09:01:36:856-apiRequest.py:28  >> res.json:{'responseTime': 39, 'updateTime': 1696899696289}
+[STEP]09:01:36:859-wipeNote.py:21  >> ----------------------清空便签数据------------------------------
+[INFO]09:01:36:860-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/home/startindex/0/rows/50/notes
+[INFO]09:01:36:862-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:36:960-apiRequest.py:45  >> res.code:200
+[INFO]09:01:36:962-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:36:964-wipeNote.py:26  >> res.status_code:200
+[INFO]09:01:36:965-wipeNote.py:27  >> res.json():{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:36:967-wipeNote.py:30  >> noteIds列表为:[]
+[INFO]09:01:36:969-wipeNote.py:32  >> 获取到的列表长度为空，无需清空
+[INFO]09:01:36:971-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/invalid/startindex/0/rows/50/notes
+[INFO]09:01:36:973-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:37:048-apiRequest.py:45  >> res.code:200
+[INFO]09:01:37:050-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:37:052-wipeNote.py:44  >> 回收站便签数据[]
+[INFO]09:01:37:053-wipeNote.py:47  >> 回收站的数据为空，无需清空
+[INFO]09:01:37:055-caseLog.py:51  >> Class Name:TestCaseSetNoteGroupInput
+[INFO]09:01:37:057-caseLog.py:52  >> Method Name:testCase_11
+[INFO]09:01:37:058-caseLog.py:53  >> Test Description:身份校验-不存在的sid‘’
+[STEP]09:01:37:060-test_input.py:198  >> STEP1:新增一个分组便签
+[INFO]09:01:37:061-apiRequest.py:23  >> url:http://note-api.wps.cn/v3/notesvr/set/notegroup
+[INFO]09:01:37:064-apiRequest.py:24  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f7890b95"}
+[INFO]09:01:37:065-apiRequest.py:25  >> body:{"groupId": "1696899697060_groupId", "groupName": "\u65b0\u589e\u5206\u7ec41696899697060_groupId", "order": 0}
+[INFO]09:01:37:144-apiRequest.py:27  >> res.code:401
+[INFO]09:01:37:146-apiRequest.py:28  >> res.json:{'errorCode': -2010, 'errorMsg': ''}
+[STEP]09:01:37:148-wipeNote.py:21  >> ----------------------清空便签数据------------------------------
+[INFO]09:01:37:150-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/home/startindex/0/rows/50/notes
+[INFO]09:01:37:152-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:37:247-apiRequest.py:45  >> res.code:200
+[INFO]09:01:37:249-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:37:251-wipeNote.py:26  >> res.status_code:200
+[INFO]09:01:37:253-wipeNote.py:27  >> res.json():{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:37:254-wipeNote.py:30  >> noteIds列表为:[]
+[INFO]09:01:37:256-wipeNote.py:32  >> 获取到的列表长度为空，无需清空
+[INFO]09:01:37:258-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/invalid/startindex/0/rows/50/notes
+[INFO]09:01:37:259-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:01:37:347-apiRequest.py:45  >> res.code:200
+[INFO]09:01:37:349-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:01:37:351-wipeNote.py:44  >> 回收站便签数据[]
+[INFO]09:01:37:352-wipeNote.py:47  >> 回收站的数据为空，无需清空
+[INFO]09:01:37:354-caseLog.py:51  >> Class Name:TestCaseSetNoteGroupInput
+[INFO]09:01:37:356-caseLog.py:52  >> Method Name:testCase_12
+[INFO]09:01:37:357-caseLog.py:53  >> Test Description:身份校验-删除cookie‘’
+[STEP]09:01:37:360-test_input.py:212  >> STEP1:新增一个分组便签
+[INFO]09:01:37:361-apiRequest.py:23  >> url:http://note-api.wps.cn/v3/notesvr/set/notegroup
+[INFO]09:01:37:363-apiRequest.py:24  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373"}
+[INFO]09:01:37:365-apiRequest.py:25  >> body:{"groupId": "1696899697360_groupId", "groupName": "\u65b0\u589e\u5206\u7ec41696899697360_groupId", "order": 0}
+[INFO]09:01:37:411-apiRequest.py:27  >> res.code:401
+[INFO]09:01:37:413-apiRequest.py:28  >> res.json:{'errorCode': -2009, 'errorMsg': ''}
+[STEP]09:09:29:621-wipeNote.py:21  >> ----------------------清空便签数据------------------------------
+[INFO]09:09:29:623-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/home/startindex/0/rows/50/notes
+[INFO]09:09:29:624-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:29:786-apiRequest.py:45  >> res.code:200
+[INFO]09:09:29:788-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:29:790-wipeNote.py:26  >> res.status_code:200
+[INFO]09:09:29:792-wipeNote.py:27  >> res.json():{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:29:793-wipeNote.py:30  >> noteIds列表为:[]
+[INFO]09:09:29:795-wipeNote.py:32  >> 获取到的列表长度为空，无需清空
+[INFO]09:09:29:796-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/invalid/startindex/0/rows/50/notes
+[INFO]09:09:29:798-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:29:887-apiRequest.py:45  >> res.code:200
+[INFO]09:09:29:889-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:29:891-wipeNote.py:44  >> 回收站便签数据[]
+[INFO]09:09:29:892-wipeNote.py:47  >> 回收站的数据为空，无需清空
+[INFO]09:09:29:894-caseLog.py:51  >> Class Name:TestCaseSetNoteGroupInput
+[INFO]09:09:29:895-caseLog.py:52  >> Method Name:testCase_01_0
+[INFO]09:09:29:897-caseLog.py:53  >> Test Description:新增便签数据冒烟 [with param=None]
+[STEP]09:09:29:899-test_input.py:41  >> STEP1:新增一个分组便签
+[INFO]09:09:29:900-apiRequest.py:23  >> url:http://note-api.wps.cn/v3/notesvr/set/notegroup
+[INFO]09:09:29:902-apiRequest.py:24  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:29:904-apiRequest.py:25  >> body:{"groupId": null, "groupName": "\u65b0\u589e\u5206\u7ec41696900169899_groupId", "order": 0}
+[INFO]09:09:29:953-apiRequest.py:27  >> res.code:500
+[INFO]09:09:29:955-apiRequest.py:28  >> res.json:{'errorCode': -7, 'errorMsg': '参数不合法！'}
+[STEP]09:09:29:957-wipeNote.py:21  >> ----------------------清空便签数据------------------------------
+[INFO]09:09:29:959-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/home/startindex/0/rows/50/notes
+[INFO]09:09:29:961-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:30:066-apiRequest.py:45  >> res.code:200
+[INFO]09:09:30:068-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:30:070-wipeNote.py:26  >> res.status_code:200
+[INFO]09:09:30:072-wipeNote.py:27  >> res.json():{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:30:073-wipeNote.py:30  >> noteIds列表为:[]
+[INFO]09:09:30:075-wipeNote.py:32  >> 获取到的列表长度为空，无需清空
+[INFO]09:09:30:077-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/invalid/startindex/0/rows/50/notes
+[INFO]09:09:30:079-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:30:181-apiRequest.py:45  >> res.code:200
+[INFO]09:09:30:183-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:30:185-wipeNote.py:44  >> 回收站便签数据[]
+[INFO]09:09:30:187-wipeNote.py:47  >> 回收站的数据为空，无需清空
+[INFO]09:09:30:189-caseLog.py:51  >> Class Name:TestCaseSetNoteGroupInput
+[INFO]09:09:30:190-caseLog.py:52  >> Method Name:testCase_01_1_
+[INFO]09:09:30:192-caseLog.py:53  >> Test Description:新增便签数据冒烟 [with param='']
+[STEP]09:09:30:193-test_input.py:41  >> STEP1:新增一个分组便签
+[INFO]09:09:30:195-apiRequest.py:23  >> url:http://note-api.wps.cn/v3/notesvr/set/notegroup
+[INFO]09:09:30:197-apiRequest.py:24  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:30:199-apiRequest.py:25  >> body:{"groupId": "", "groupName": "\u65b0\u589e\u5206\u7ec41696900170194_groupId", "order": 0}
+[INFO]09:09:30:261-apiRequest.py:27  >> res.code:500
+[INFO]09:09:30:264-apiRequest.py:28  >> res.json:{'errorCode': -7, 'errorMsg': '参数不合法！'}
+[STEP]09:09:30:266-wipeNote.py:21  >> ----------------------清空便签数据------------------------------
+[INFO]09:09:30:268-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/home/startindex/0/rows/50/notes
+[INFO]09:09:30:270-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:30:374-apiRequest.py:45  >> res.code:200
+[INFO]09:09:30:376-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:30:378-wipeNote.py:26  >> res.status_code:200
+[INFO]09:09:30:380-wipeNote.py:27  >> res.json():{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:30:382-wipeNote.py:30  >> noteIds列表为:[]
+[INFO]09:09:30:383-wipeNote.py:32  >> 获取到的列表长度为空，无需清空
+[INFO]09:09:30:385-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/invalid/startindex/0/rows/50/notes
+[INFO]09:09:30:387-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:30:477-apiRequest.py:45  >> res.code:200
+[INFO]09:09:30:479-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:30:481-wipeNote.py:44  >> 回收站便签数据[]
+[INFO]09:09:30:483-wipeNote.py:47  >> 回收站的数据为空，无需清空
+[INFO]09:09:30:485-caseLog.py:51  >> Class Name:TestCaseSetNoteGroupInput
+[INFO]09:09:30:486-caseLog.py:52  >> Method Name:testCase_02
+[INFO]09:09:30:488-caseLog.py:53  >> Test Description:删除groupId key
+[STEP]09:09:30:490-test_input.py:55  >> STEP1:新增一个分组便签
+[INFO]09:09:30:492-apiRequest.py:23  >> url:http://note-api.wps.cn/v3/notesvr/set/notegroup
+[INFO]09:09:30:494-apiRequest.py:24  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:30:496-apiRequest.py:25  >> body:{"groupName": "\u65b0\u589e\u5206\u7ec41696900170490_groupId", "order": 0}
+[INFO]09:09:30:535-apiRequest.py:27  >> res.code:500
+[INFO]09:09:30:537-apiRequest.py:28  >> res.json:{'errorCode': -7, 'errorMsg': '参数不合法！'}
+[STEP]09:09:30:539-wipeNote.py:21  >> ----------------------清空便签数据------------------------------
+[INFO]09:09:30:541-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/home/startindex/0/rows/50/notes
+[INFO]09:09:30:543-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:30:646-apiRequest.py:45  >> res.code:200
+[INFO]09:09:30:648-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:30:650-wipeNote.py:26  >> res.status_code:200
+[INFO]09:09:30:651-wipeNote.py:27  >> res.json():{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:30:653-wipeNote.py:30  >> noteIds列表为:[]
+[INFO]09:09:30:655-wipeNote.py:32  >> 获取到的列表长度为空，无需清空
+[INFO]09:09:30:656-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/invalid/startindex/0/rows/50/notes
+[INFO]09:09:30:658-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:30:744-apiRequest.py:45  >> res.code:200
+[INFO]09:09:30:746-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:30:748-wipeNote.py:44  >> 回收站便签数据[]
+[INFO]09:09:30:750-wipeNote.py:47  >> 回收站的数据为空，无需清空
+[INFO]09:09:30:751-caseLog.py:51  >> Class Name:TestCaseSetNoteGroupInput
+[INFO]09:09:30:753-caseLog.py:52  >> Method Name:testCase_03_0_999999999999999999999999999999999999999999999999999999999999999999
+[INFO]09:09:30:754-caseLog.py:53  >> Test Description:group超长1，99999999 [with param='9999999999999999999999999999999...9999999999999999999999999999999']
+[STEP]09:09:30:756-test_input.py:73  >> STEP1:新增一个分组便签
+[INFO]09:09:30:758-apiRequest.py:23  >> url:http://note-api.wps.cn/v3/notesvr/set/notegroup
+[INFO]09:09:30:760-apiRequest.py:24  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:30:762-apiRequest.py:25  >> body:{"groupId": "999999999999999999999999999999999999999999999999999999999999999999", "groupName": "\u65b0\u589e\u5206\u7ec41696900170756_groupId", "order": 0}
+[INFO]09:09:30:800-apiRequest.py:27  >> res.code:500
+[INFO]09:09:30:802-apiRequest.py:28  >> res.json:{'errorCode': -7, 'errorMsg': '参数不合法！'}
+[STEP]09:09:30:805-wipeNote.py:21  >> ----------------------清空便签数据------------------------------
+[INFO]09:09:30:807-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/home/startindex/0/rows/50/notes
+[INFO]09:09:30:809-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:30:919-apiRequest.py:45  >> res.code:200
+[INFO]09:09:30:922-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:30:924-wipeNote.py:26  >> res.status_code:200
+[INFO]09:09:30:926-wipeNote.py:27  >> res.json():{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:30:927-wipeNote.py:30  >> noteIds列表为:[]
+[INFO]09:09:30:929-wipeNote.py:32  >> 获取到的列表长度为空，无需清空
+[INFO]09:09:30:930-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/invalid/startindex/0/rows/50/notes
+[INFO]09:09:30:932-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:31:011-apiRequest.py:45  >> res.code:200
+[INFO]09:09:31:013-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:31:015-wipeNote.py:44  >> 回收站便签数据[]
+[INFO]09:09:31:016-wipeNote.py:47  >> 回收站的数据为空，无需清空
+[INFO]09:09:31:018-caseLog.py:51  >> Class Name:TestCaseSetNoteGroupInput
+[INFO]09:09:31:020-caseLog.py:52  >> Method Name:testCase_04
+[INFO]09:09:31:021-caseLog.py:53  >> Test Description:group包括中文
+[STEP]09:09:31:023-test_input.py:88  >> STEP1:新增一个分组便签
+[INFO]09:09:31:024-apiRequest.py:23  >> url:http://note-api.wps.cn/v3/notesvr/set/notegroup
+[INFO]09:09:31:026-apiRequest.py:24  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:31:028-apiRequest.py:25  >> body:{"groupId": "\u4f60\u597d", "groupName": "\u65b0\u589e\u5206\u7ec41696900171023_groupId", "order": 0}
+[INFO]09:09:31:111-apiRequest.py:27  >> res.code:200
+[INFO]09:09:31:113-apiRequest.py:28  >> res.json:{'responseTime': 37, 'updateTime': 1696900170542}
+[STEP]09:09:31:115-wipeNote.py:21  >> ----------------------清空便签数据------------------------------
+[INFO]09:09:31:117-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/home/startindex/0/rows/50/notes
+[INFO]09:09:31:119-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:31:222-apiRequest.py:45  >> res.code:200
+[INFO]09:09:31:224-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:31:225-wipeNote.py:26  >> res.status_code:200
+[INFO]09:09:31:227-wipeNote.py:27  >> res.json():{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:31:228-wipeNote.py:30  >> noteIds列表为:[]
+[INFO]09:09:31:230-wipeNote.py:32  >> 获取到的列表长度为空，无需清空
+[INFO]09:09:31:232-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/invalid/startindex/0/rows/50/notes
+[INFO]09:09:31:233-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:31:320-apiRequest.py:45  >> res.code:200
+[INFO]09:09:31:322-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:31:324-wipeNote.py:44  >> 回收站便签数据[]
+[INFO]09:09:31:325-wipeNote.py:47  >> 回收站的数据为空，无需清空
+[INFO]09:09:31:327-caseLog.py:51  >> Class Name:TestCaseSetNoteGroupInput
+[INFO]09:09:31:328-caseLog.py:52  >> Method Name:testCase_05_0
+[INFO]09:09:31:329-caseLog.py:53  >> Test Description:groupName包括1,None 2，‘’ [with param=None]
+[STEP]09:09:31:331-test_input.py:106  >> STEP1:新增一个分组便签
+[INFO]09:09:31:333-apiRequest.py:23  >> url:http://note-api.wps.cn/v3/notesvr/set/notegroup
+[INFO]09:09:31:335-apiRequest.py:24  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:31:336-apiRequest.py:25  >> body:{"groupId": "1696900171331_groupId", "groupName": null, "order": 0}
+[INFO]09:09:31:393-apiRequest.py:27  >> res.code:500
+[INFO]09:09:31:395-apiRequest.py:28  >> res.json:{'errorCode': -7, 'errorMsg': '参数不合法！'}
+[STEP]09:09:31:397-wipeNote.py:21  >> ----------------------清空便签数据------------------------------
+[INFO]09:09:31:399-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/home/startindex/0/rows/50/notes
+[INFO]09:09:31:401-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:31:500-apiRequest.py:45  >> res.code:200
+[INFO]09:09:31:502-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:31:504-wipeNote.py:26  >> res.status_code:200
+[INFO]09:09:31:505-wipeNote.py:27  >> res.json():{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:31:507-wipeNote.py:30  >> noteIds列表为:[]
+[INFO]09:09:31:508-wipeNote.py:32  >> 获取到的列表长度为空，无需清空
+[INFO]09:09:31:510-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/invalid/startindex/0/rows/50/notes
+[INFO]09:09:31:512-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:31:590-apiRequest.py:45  >> res.code:200
+[INFO]09:09:31:592-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:31:593-wipeNote.py:44  >> 回收站便签数据[]
+[INFO]09:09:31:595-wipeNote.py:47  >> 回收站的数据为空，无需清空
+[INFO]09:09:31:597-caseLog.py:51  >> Class Name:TestCaseSetNoteGroupInput
+[INFO]09:09:31:598-caseLog.py:52  >> Method Name:testCase_05_1_
+[INFO]09:09:31:600-caseLog.py:53  >> Test Description:groupName包括1,None 2，‘’ [with param='']
+[STEP]09:09:31:601-test_input.py:106  >> STEP1:新增一个分组便签
+[INFO]09:09:31:603-apiRequest.py:23  >> url:http://note-api.wps.cn/v3/notesvr/set/notegroup
+[INFO]09:09:31:605-apiRequest.py:24  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:31:607-apiRequest.py:25  >> body:{"groupId": "1696900171602_groupId", "groupName": "", "order": 0}
+[INFO]09:09:31:647-apiRequest.py:27  >> res.code:500
+[INFO]09:09:31:650-apiRequest.py:28  >> res.json:{'errorCode': -7, 'errorMsg': '参数不合法！'}
+[STEP]09:09:31:652-wipeNote.py:21  >> ----------------------清空便签数据------------------------------
+[INFO]09:09:31:654-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/home/startindex/0/rows/50/notes
+[INFO]09:09:31:656-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:31:791-apiRequest.py:45  >> res.code:200
+[INFO]09:09:31:793-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:31:795-wipeNote.py:26  >> res.status_code:200
+[INFO]09:09:31:796-wipeNote.py:27  >> res.json():{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:31:798-wipeNote.py:30  >> noteIds列表为:[]
+[INFO]09:09:31:799-wipeNote.py:32  >> 获取到的列表长度为空，无需清空
+[INFO]09:09:31:801-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/invalid/startindex/0/rows/50/notes
+[INFO]09:09:31:802-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:31:888-apiRequest.py:45  >> res.code:200
+[INFO]09:09:31:890-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:31:891-wipeNote.py:44  >> 回收站便签数据[]
+[INFO]09:09:31:893-wipeNote.py:47  >> 回收站的数据为空，无需清空
+[INFO]09:09:31:894-caseLog.py:51  >> Class Name:TestCaseSetNoteGroupInput
+[INFO]09:09:31:896-caseLog.py:52  >> Method Name:testCase_06
+[INFO]09:09:31:897-caseLog.py:53  >> Test Description:groupName删除key‘’
+[STEP]09:09:31:899-test_input.py:121  >> STEP1:新增一个分组便签
+[INFO]09:09:31:900-apiRequest.py:23  >> url:http://note-api.wps.cn/v3/notesvr/set/notegroup
+[INFO]09:09:31:902-apiRequest.py:24  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:31:903-apiRequest.py:25  >> body:{"groupId": "1696900171899_groupId", "order": 0}
+[INFO]09:09:31:949-apiRequest.py:27  >> res.code:500
+[INFO]09:09:31:951-apiRequest.py:28  >> res.json:{'errorCode': -7, 'errorMsg': '参数不合法！'}
+[STEP]09:09:31:953-wipeNote.py:21  >> ----------------------清空便签数据------------------------------
+[INFO]09:09:31:954-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/home/startindex/0/rows/50/notes
+[INFO]09:09:31:956-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:32:047-apiRequest.py:45  >> res.code:200
+[INFO]09:09:32:049-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:32:051-wipeNote.py:26  >> res.status_code:200
+[INFO]09:09:32:052-wipeNote.py:27  >> res.json():{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:32:054-wipeNote.py:30  >> noteIds列表为:[]
+[INFO]09:09:32:056-wipeNote.py:32  >> 获取到的列表长度为空，无需清空
+[INFO]09:09:32:057-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/invalid/startindex/0/rows/50/notes
+[INFO]09:09:32:059-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:32:158-apiRequest.py:45  >> res.code:200
+[INFO]09:09:32:160-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:32:162-wipeNote.py:44  >> 回收站便签数据[]
+[INFO]09:09:32:163-wipeNote.py:47  >> 回收站的数据为空，无需清空
+[INFO]09:09:32:165-caseLog.py:51  >> Class Name:TestCaseSetNoteGroupInput
+[INFO]09:09:32:166-caseLog.py:52  >> Method Name:testCase_07_0_1_
+[INFO]09:09:32:168-caseLog.py:53  >> Test Description:groupName删除key‘’ [with param='1@!!!']
+[STEP]09:09:32:169-test_input.py:140  >> STEP1:新增一个分组便签
+[INFO]09:09:32:171-apiRequest.py:23  >> url:http://note-api.wps.cn/v3/notesvr/set/notegroup
+[INFO]09:09:32:173-apiRequest.py:24  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:32:175-apiRequest.py:25  >> body:{"groupId": "1696900172170_groupId", "groupName": "1@!!!", "order": 0}
+[INFO]09:09:32:286-apiRequest.py:27  >> res.code:200
+[INFO]09:09:32:288-apiRequest.py:28  >> res.json:{'responseTime': 55, 'updateTime': 1696900171696}
+[STEP]09:09:32:290-wipeNote.py:21  >> ----------------------清空便签数据------------------------------
+[INFO]09:09:32:292-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/home/startindex/0/rows/50/notes
+[INFO]09:09:32:294-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:32:396-apiRequest.py:45  >> res.code:200
+[INFO]09:09:32:398-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:32:400-wipeNote.py:26  >> res.status_code:200
+[INFO]09:09:32:401-wipeNote.py:27  >> res.json():{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:32:403-wipeNote.py:30  >> noteIds列表为:[]
+[INFO]09:09:32:405-wipeNote.py:32  >> 获取到的列表长度为空，无需清空
+[INFO]09:09:32:406-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/invalid/startindex/0/rows/50/notes
+[INFO]09:09:32:408-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:32:496-apiRequest.py:45  >> res.code:200
+[INFO]09:09:32:498-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:32:499-wipeNote.py:44  >> 回收站便签数据[]
+[INFO]09:09:32:501-wipeNote.py:47  >> 回收站的数据为空，无需清空
+[INFO]09:09:32:502-caseLog.py:51  >> Class Name:TestCaseSetNoteGroupInput
+[INFO]09:09:32:504-caseLog.py:52  >> Method Name:testCase_07_1_99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+[INFO]09:09:32:506-caseLog.py:53  >> Test Description:groupName删除key‘’ [with param='9999999999999999999999999999999...9999999999999999999999999999999']
+[STEP]09:09:32:507-test_input.py:140  >> STEP1:新增一个分组便签
+[INFO]09:09:32:509-apiRequest.py:23  >> url:http://note-api.wps.cn/v3/notesvr/set/notegroup
+[INFO]09:09:32:511-apiRequest.py:24  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:32:513-apiRequest.py:25  >> body:{"groupId": "1696900172508_groupId", "groupName": "99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999", "order": 0}
+[INFO]09:09:32:600-apiRequest.py:27  >> res.code:200
+[INFO]09:09:32:602-apiRequest.py:28  >> res.json:{'responseTime': 45, 'updateTime': 1696900172020}
+[STEP]09:09:32:604-wipeNote.py:21  >> ----------------------清空便签数据------------------------------
+[INFO]09:09:32:606-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/home/startindex/0/rows/50/notes
+[INFO]09:09:32:608-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:32:705-apiRequest.py:45  >> res.code:200
+[INFO]09:09:32:707-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:32:709-wipeNote.py:26  >> res.status_code:200
+[INFO]09:09:32:710-wipeNote.py:27  >> res.json():{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:32:712-wipeNote.py:30  >> noteIds列表为:[]
+[INFO]09:09:32:714-wipeNote.py:32  >> 获取到的列表长度为空，无需清空
+[INFO]09:09:32:715-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/invalid/startindex/0/rows/50/notes
+[INFO]09:09:32:717-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:32:812-apiRequest.py:45  >> res.code:200
+[INFO]09:09:32:814-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:32:815-wipeNote.py:44  >> 回收站便签数据[]
+[INFO]09:09:32:817-wipeNote.py:47  >> 回收站的数据为空，无需清空
+[INFO]09:09:32:818-caseLog.py:51  >> Class Name:TestCaseSetNoteGroupInput
+[INFO]09:09:32:820-caseLog.py:52  >> Method Name:testCase_08_0
+[INFO]09:09:32:821-caseLog.py:53  >> Test Description:groupName删除key‘’ [with param=0]
+[STEP]09:09:32:823-test_input.py:155  >> STEP1:新增一个分组便签
+[INFO]09:09:32:825-apiRequest.py:23  >> url:http://note-api.wps.cn/v3/notesvr/set/notegroup
+[INFO]09:09:32:826-apiRequest.py:24  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:32:828-apiRequest.py:25  >> body:{"groupId": "1696900172823_groupId", "groupName": "\u65b0\u589e\u5206\u7ec41696900172823_groupId", "order": 0}
+[INFO]09:09:32:956-apiRequest.py:27  >> res.code:200
+[INFO]09:09:32:958-apiRequest.py:28  >> res.json:{'responseTime': 61, 'updateTime': 1696900172388}
+[STEP]09:09:32:960-wipeNote.py:21  >> ----------------------清空便签数据------------------------------
+[INFO]09:09:32:962-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/home/startindex/0/rows/50/notes
+[INFO]09:09:32:964-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:33:075-apiRequest.py:45  >> res.code:200
+[INFO]09:09:33:077-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:33:079-wipeNote.py:26  >> res.status_code:200
+[INFO]09:09:33:080-wipeNote.py:27  >> res.json():{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:33:082-wipeNote.py:30  >> noteIds列表为:[]
+[INFO]09:09:33:083-wipeNote.py:32  >> 获取到的列表长度为空，无需清空
+[INFO]09:09:33:085-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/invalid/startindex/0/rows/50/notes
+[INFO]09:09:33:087-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:33:170-apiRequest.py:45  >> res.code:200
+[INFO]09:09:33:171-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:33:173-wipeNote.py:44  >> 回收站便签数据[]
+[INFO]09:09:33:175-wipeNote.py:47  >> 回收站的数据为空，无需清空
+[INFO]09:09:33:176-caseLog.py:51  >> Class Name:TestCaseSetNoteGroupInput
+[INFO]09:09:33:178-caseLog.py:52  >> Method Name:testCase_08_1
+[INFO]09:09:33:179-caseLog.py:53  >> Test Description:groupName删除key‘’ [with param=1.5]
+[STEP]09:09:33:181-test_input.py:155  >> STEP1:新增一个分组便签
+[INFO]09:09:33:182-apiRequest.py:23  >> url:http://note-api.wps.cn/v3/notesvr/set/notegroup
+[INFO]09:09:33:184-apiRequest.py:24  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:33:186-apiRequest.py:25  >> body:{"groupId": "1696900173181_groupId", "groupName": "\u65b0\u589e\u5206\u7ec41696900173181_groupId", "order": 1.5}
+[INFO]09:09:33:271-apiRequest.py:27  >> res.code:200
+[INFO]09:09:33:273-apiRequest.py:28  >> res.json:{'responseTime': 40, 'updateTime': 1696900172708}
+[STEP]09:09:33:275-wipeNote.py:21  >> ----------------------清空便签数据------------------------------
+[INFO]09:09:33:277-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/home/startindex/0/rows/50/notes
+[INFO]09:09:33:279-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:33:373-apiRequest.py:45  >> res.code:200
+[INFO]09:09:33:375-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:33:376-wipeNote.py:26  >> res.status_code:200
+[INFO]09:09:33:378-wipeNote.py:27  >> res.json():{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:33:379-wipeNote.py:30  >> noteIds列表为:[]
+[INFO]09:09:33:382-wipeNote.py:32  >> 获取到的列表长度为空，无需清空
+[INFO]09:09:33:383-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/invalid/startindex/0/rows/50/notes
+[INFO]09:09:33:385-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:33:475-apiRequest.py:45  >> res.code:200
+[INFO]09:09:33:477-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:33:478-wipeNote.py:44  >> 回收站便签数据[]
+[INFO]09:09:33:480-wipeNote.py:47  >> 回收站的数据为空，无需清空
+[INFO]09:09:33:481-caseLog.py:51  >> Class Name:TestCaseSetNoteGroupInput
+[INFO]09:09:33:483-caseLog.py:52  >> Method Name:testCase_09_0_1
+[INFO]09:09:33:484-caseLog.py:53  >> Test Description:groupName删除key‘’ [with param='1']
+[STEP]09:09:33:486-test_input.py:170  >> STEP1:新增一个分组便签
+[INFO]09:09:33:487-apiRequest.py:23  >> url:http://note-api.wps.cn/v3/notesvr/set/notegroup
+[INFO]09:09:33:489-apiRequest.py:24  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:33:491-apiRequest.py:25  >> body:{"groupId": "1696900173486_groupId", "groupName": "\u65b0\u589e\u5206\u7ec41696900173486_groupId", "order": "1"}
+[INFO]09:09:33:576-apiRequest.py:27  >> res.code:200
+[INFO]09:09:33:578-apiRequest.py:28  >> res.json:{'responseTime': 34, 'updateTime': 1696900173011}
+[STEP]09:09:33:580-wipeNote.py:21  >> ----------------------清空便签数据------------------------------
+[INFO]09:09:33:582-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/home/startindex/0/rows/50/notes
+[INFO]09:09:33:584-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:33:674-apiRequest.py:45  >> res.code:200
+[INFO]09:09:33:676-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:33:678-wipeNote.py:26  >> res.status_code:200
+[INFO]09:09:33:679-wipeNote.py:27  >> res.json():{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:33:681-wipeNote.py:30  >> noteIds列表为:[]
+[INFO]09:09:33:683-wipeNote.py:32  >> 获取到的列表长度为空，无需清空
+[INFO]09:09:33:684-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/invalid/startindex/0/rows/50/notes
+[INFO]09:09:33:686-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:33:766-apiRequest.py:45  >> res.code:200
+[INFO]09:09:33:768-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:33:769-wipeNote.py:44  >> 回收站便签数据[]
+[INFO]09:09:33:771-wipeNote.py:47  >> 回收站的数据为空，无需清空
+[INFO]09:09:33:773-caseLog.py:51  >> Class Name:TestCaseSetNoteGroupInput
+[INFO]09:09:33:774-caseLog.py:52  >> Method Name:testCase_09_1_1
+[INFO]09:09:33:776-caseLog.py:53  >> Test Description:groupName删除key‘’ [with param='1']
+[STEP]09:09:33:777-test_input.py:170  >> STEP1:新增一个分组便签
+[INFO]09:09:33:779-apiRequest.py:23  >> url:http://note-api.wps.cn/v3/notesvr/set/notegroup
+[INFO]09:09:33:781-apiRequest.py:24  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:33:783-apiRequest.py:25  >> body:{"groupId": "1696900173778_groupId", "groupName": "\u65b0\u589e\u5206\u7ec41696900173778_groupId", "order": "1"}
+[INFO]09:09:33:860-apiRequest.py:27  >> res.code:200
+[INFO]09:09:33:862-apiRequest.py:28  >> res.json:{'responseTime': 38, 'updateTime': 1696900173287}
+[STEP]09:09:33:864-wipeNote.py:21  >> ----------------------清空便签数据------------------------------
+[INFO]09:09:33:866-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/home/startindex/0/rows/50/notes
+[INFO]09:09:33:868-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:33:960-apiRequest.py:45  >> res.code:200
+[INFO]09:09:33:962-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:33:964-wipeNote.py:26  >> res.status_code:200
+[INFO]09:09:33:966-wipeNote.py:27  >> res.json():{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:33:967-wipeNote.py:30  >> noteIds列表为:[]
+[INFO]09:09:33:969-wipeNote.py:32  >> 获取到的列表长度为空，无需清空
+[INFO]09:09:33:971-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/invalid/startindex/0/rows/50/notes
+[INFO]09:09:33:972-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:34:048-apiRequest.py:45  >> res.code:200
+[INFO]09:09:34:050-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:34:051-wipeNote.py:44  >> 回收站便签数据[]
+[INFO]09:09:34:053-wipeNote.py:47  >> 回收站的数据为空，无需清空
+[INFO]09:09:34:053-caseLog.py:51  >> Class Name:TestCaseSetNoteGroupInput
+[INFO]09:09:34:055-caseLog.py:52  >> Method Name:testCase_10_0
+[INFO]09:09:34:057-caseLog.py:53  >> Test Description:order删除key‘’ [with param=2147483648]
+[STEP]09:09:34:059-test_input.py:185  >> STEP1:新增一个分组便签
+[INFO]09:09:34:060-apiRequest.py:23  >> url:http://note-api.wps.cn/v3/notesvr/set/notegroup
+[INFO]09:09:34:062-apiRequest.py:24  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:34:064-apiRequest.py:25  >> body:{"groupId": "1696900174059_groupId", "groupName": "\u65b0\u589e\u5206\u7ec41696900174059_groupId"}
+[INFO]09:09:34:144-apiRequest.py:27  >> res.code:200
+[INFO]09:09:34:147-apiRequest.py:28  >> res.json:{'responseTime': 37, 'updateTime': 1696900173582}
+[STEP]09:09:34:150-wipeNote.py:21  >> ----------------------清空便签数据------------------------------
+[INFO]09:09:34:152-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/home/startindex/0/rows/50/notes
+[INFO]09:09:34:153-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:34:249-apiRequest.py:45  >> res.code:200
+[INFO]09:09:34:251-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:34:253-wipeNote.py:26  >> res.status_code:200
+[INFO]09:09:34:254-wipeNote.py:27  >> res.json():{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:34:256-wipeNote.py:30  >> noteIds列表为:[]
+[INFO]09:09:34:258-wipeNote.py:32  >> 获取到的列表长度为空，无需清空
+[INFO]09:09:34:259-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/invalid/startindex/0/rows/50/notes
+[INFO]09:09:34:261-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:34:347-apiRequest.py:45  >> res.code:200
+[INFO]09:09:34:349-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:34:351-wipeNote.py:44  >> 回收站便签数据[]
+[INFO]09:09:34:352-wipeNote.py:47  >> 回收站的数据为空，无需清空
+[INFO]09:09:34:354-caseLog.py:51  >> Class Name:TestCaseSetNoteGroupInput
+[INFO]09:09:34:355-caseLog.py:52  >> Method Name:testCase_10_1
+[INFO]09:09:34:357-caseLog.py:53  >> Test Description:order删除key‘’ [with param=-2147483649]
+[STEP]09:09:34:358-test_input.py:185  >> STEP1:新增一个分组便签
+[INFO]09:09:34:360-apiRequest.py:23  >> url:http://note-api.wps.cn/v3/notesvr/set/notegroup
+[INFO]09:09:34:362-apiRequest.py:24  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:34:364-apiRequest.py:25  >> body:{"groupId": "1696900174359_groupId", "groupName": "\u65b0\u589e\u5206\u7ec41696900174359_groupId"}
+[INFO]09:09:34:447-apiRequest.py:27  >> res.code:200
+[INFO]09:09:34:449-apiRequest.py:28  >> res.json:{'responseTime': 32, 'updateTime': 1696900173872}
+[STEP]09:09:34:452-wipeNote.py:21  >> ----------------------清空便签数据------------------------------
+[INFO]09:09:34:454-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/home/startindex/0/rows/50/notes
+[INFO]09:09:34:456-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:34:548-apiRequest.py:45  >> res.code:200
+[INFO]09:09:34:550-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:34:552-wipeNote.py:26  >> res.status_code:200
+[INFO]09:09:34:553-wipeNote.py:27  >> res.json():{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:34:555-wipeNote.py:30  >> noteIds列表为:[]
+[INFO]09:09:34:557-wipeNote.py:32  >> 获取到的列表长度为空，无需清空
+[INFO]09:09:34:558-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/invalid/startindex/0/rows/50/notes
+[INFO]09:09:34:560-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:34:647-apiRequest.py:45  >> res.code:200
+[INFO]09:09:34:649-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:34:651-wipeNote.py:44  >> 回收站便签数据[]
+[INFO]09:09:34:653-wipeNote.py:47  >> 回收站的数据为空，无需清空
+[INFO]09:09:34:654-caseLog.py:51  >> Class Name:TestCaseSetNoteGroupInput
+[INFO]09:09:34:656-caseLog.py:52  >> Method Name:testCase_11
+[INFO]09:09:34:657-caseLog.py:53  >> Test Description:身份校验-不存在的sid‘’
+[STEP]09:09:34:659-test_input.py:198  >> STEP1:新增一个分组便签
+[INFO]09:09:34:660-apiRequest.py:23  >> url:http://note-api.wps.cn/v3/notesvr/set/notegroup
+[INFO]09:09:34:662-apiRequest.py:24  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f7890b95"}
+[INFO]09:09:34:664-apiRequest.py:25  >> body:{"groupId": "1696900174659_groupId", "groupName": "\u65b0\u589e\u5206\u7ec41696900174659_groupId", "order": 0}
+[INFO]09:09:34:733-apiRequest.py:27  >> res.code:401
+[INFO]09:09:34:735-apiRequest.py:28  >> res.json:{'errorCode': -2010, 'errorMsg': ''}
+[STEP]09:09:34:737-wipeNote.py:21  >> ----------------------清空便签数据------------------------------
+[INFO]09:09:34:739-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/home/startindex/0/rows/50/notes
+[INFO]09:09:34:741-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:34:838-apiRequest.py:45  >> res.code:200
+[INFO]09:09:34:840-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:34:842-wipeNote.py:26  >> res.status_code:200
+[INFO]09:09:34:843-wipeNote.py:27  >> res.json():{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:34:845-wipeNote.py:30  >> noteIds列表为:[]
+[INFO]09:09:34:846-wipeNote.py:32  >> 获取到的列表长度为空，无需清空
+[INFO]09:09:34:848-apiRequest.py:41  >> url:http://note-api.wps.cn/v3/notesvr/user/236948373/invalid/startindex/0/rows/50/notes
+[INFO]09:09:34:850-apiRequest.py:42  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373", "Cookie": "wps_sid=V02SzZhvW5p4R-F9xWxYg1FnX3fb6XI00a6c5883000e1f8b95"}
+[INFO]09:09:34:943-apiRequest.py:45  >> res.code:200
+[INFO]09:09:34:945-apiRequest.py:46  >> res.json:{'responseTime': 0, 'webNotes': []}
+[INFO]09:09:34:946-wipeNote.py:44  >> 回收站便签数据[]
+[INFO]09:09:34:949-wipeNote.py:47  >> 回收站的数据为空，无需清空
+[INFO]09:09:34:951-caseLog.py:51  >> Class Name:TestCaseSetNoteGroupInput
+[INFO]09:09:34:952-caseLog.py:52  >> Method Name:testCase_12
+[INFO]09:09:34:954-caseLog.py:53  >> Test Description:身份校验-删除cookie‘’
+[STEP]09:09:34:956-test_input.py:212  >> STEP1:新增一个分组便签
+[INFO]09:09:34:958-apiRequest.py:23  >> url:http://note-api.wps.cn/v3/notesvr/set/notegroup
+[INFO]09:09:34:960-apiRequest.py:24  >> headers:{"Content-Type": "application/json", "X-user-key": "236948373"}
+[INFO]09:09:34:961-apiRequest.py:25  >> body:{"groupId": "1696900174957_groupId", "groupName": "\u65b0\u589e\u5206\u7ec41696900174957_groupId", "order": 0}
+[INFO]09:09:35:009-apiRequest.py:27  >> res.code:401
+[INFO]09:09:35:011-apiRequest.py:28  >> res.json:{'errorCode': -2009, 'errorMsg': ''}
